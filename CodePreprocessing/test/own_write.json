@@ -1,0 +1,584 @@
+{
+    "filename": "/sa-bAbI/tokenizer/bin/own_write.c",
+    "tokens": [
+        {
+            "kind": "Keyword",
+            "line": 3,
+            "sem": "FunctionDecl",
+            "text": "int"
+        },
+        {
+            "kind": "Identifier",
+            "line": 3,
+            "sem": "FunctionDecl",
+            "sym": {
+                "id": "c:@F@main",
+                "kind": "FunctionDecl",
+                "type": "int ()"
+            },
+            "text": "main"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 3,
+            "sem": "FunctionDecl",
+            "text": "("
+        },
+        {
+            "kind": "Punctuation",
+            "line": 3,
+            "sem": "FunctionDecl",
+            "text": ")"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 3,
+            "sem": "CompoundStmt",
+            "text": "{"
+        },
+        {
+            "kind": "Keyword",
+            "line": 4,
+            "sem": "VarDecl",
+            "text": "int"
+        },
+        {
+            "kind": "Identifier",
+            "line": 4,
+            "sem": "VarDecl",
+            "sym": {
+                "id": "c:own_write.c@36@F@main@a",
+                "kind": "VarDecl",
+                "type": "int"
+            },
+            "text": "a"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 4,
+            "sem": "VarDecl",
+            "text": "="
+        },
+        {
+            "kind": "Literal",
+            "line": 4,
+            "sem": "IntegerLiteral",
+            "text": "1"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 4,
+            "sem": "DeclStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Keyword",
+            "line": 5,
+            "sem": "VarDecl",
+            "text": "int"
+        },
+        {
+            "kind": "Identifier",
+            "line": 5,
+            "sem": "VarDecl",
+            "sym": {
+                "id": "c:own_write.c@51@F@main@b",
+                "kind": "VarDecl",
+                "type": "int"
+            },
+            "text": "b"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 5,
+            "sem": "VarDecl",
+            "text": "="
+        },
+        {
+            "kind": "Literal",
+            "line": 5,
+            "sem": "IntegerLiteral",
+            "text": "2"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 5,
+            "sem": "DeclStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Keyword",
+            "line": 6,
+            "sem": "VarDecl",
+            "text": "int"
+        },
+        {
+            "kind": "Identifier",
+            "line": 6,
+            "sem": "VarDecl",
+            "sym": {
+                "id": "c:own_write.c@66@F@main@c",
+                "kind": "VarDecl",
+                "type": "int"
+            },
+            "text": "c"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 6,
+            "sem": "VarDecl",
+            "text": "="
+        },
+        {
+            "kind": "Literal",
+            "line": 6,
+            "sem": "IntegerLiteral",
+            "text": "3"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 6,
+            "sem": "DeclStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Keyword",
+            "line": 7,
+            "sem": "VarDecl",
+            "text": "char"
+        },
+        {
+            "kind": "Identifier",
+            "line": 7,
+            "sem": "VarDecl",
+            "sym": {
+                "id": "c:own_write.c@81@F@main@d",
+                "kind": "VarDecl",
+                "type": "char"
+            },
+            "text": "d"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 7,
+            "sem": "VarDecl",
+            "text": "="
+        },
+        {
+            "kind": "Literal",
+            "line": 7,
+            "sem": "CharacterLiteral",
+            "text": "'c'"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 7,
+            "sem": "DeclStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Keyword",
+            "line": 8,
+            "sem": "VarDecl",
+            "text": "int"
+        },
+        {
+            "kind": "Identifier",
+            "line": 8,
+            "sem": "VarDecl",
+            "sym": {
+                "id": "c:own_write.c@99@F@main@e",
+                "kind": "VarDecl",
+                "type": "int"
+            },
+            "text": "e"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 8,
+            "sem": "VarDecl",
+            "text": "="
+        },
+        {
+            "kind": "Identifier",
+            "line": 8,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:@F@add",
+                "kind": "FunctionDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/own_write.c",
+                    "linenum": 16
+                },
+                "type": "int ()"
+            },
+            "text": "add"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 8,
+            "sem": "CallExpr",
+            "text": "("
+        },
+        {
+            "kind": "Identifier",
+            "line": 8,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:own_write.c@36@F@main@a",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/own_write.c",
+                    "linenum": 4
+                },
+                "type": "int"
+            },
+            "text": "a"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 8,
+            "sem": "CallExpr",
+            "text": ","
+        },
+        {
+            "kind": "Identifier",
+            "line": 8,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:own_write.c@51@F@main@b",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/own_write.c",
+                    "linenum": 5
+                },
+                "type": "int"
+            },
+            "text": "b"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 8,
+            "sem": "CallExpr",
+            "text": ")"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 8,
+            "sem": "DeclStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Keyword",
+            "line": 9,
+            "sem": "WhileStmt",
+            "text": "while"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 9,
+            "sem": "WhileStmt",
+            "text": "("
+        },
+        {
+            "kind": "Identifier",
+            "line": 9,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:@F@add",
+                "kind": "FunctionDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/own_write.c",
+                    "linenum": 16
+                },
+                "type": "int ()"
+            },
+            "text": "add"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 9,
+            "sem": "CallExpr",
+            "text": "("
+        },
+        {
+            "kind": "Identifier",
+            "line": 9,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:own_write.c@36@F@main@a",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/own_write.c",
+                    "linenum": 4
+                },
+                "type": "int"
+            },
+            "text": "a"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 9,
+            "sem": "CallExpr",
+            "text": ","
+        },
+        {
+            "kind": "Identifier",
+            "line": 9,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:own_write.c@66@F@main@c",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/own_write.c",
+                    "linenum": 6
+                },
+                "type": "int"
+            },
+            "text": "c"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 9,
+            "sem": "CallExpr",
+            "text": ")"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 9,
+            "sem": "BinaryOperator",
+            "text": "<"
+        },
+        {
+            "kind": "Literal",
+            "line": 9,
+            "sem": "IntegerLiteral",
+            "text": "4"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 9,
+            "sem": "WhileStmt",
+            "text": ")"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 9,
+            "sem": "CompoundStmt",
+            "text": "{"
+        },
+        {
+            "kind": "Identifier",
+            "line": 10,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:own_write.c@36@F@main@a",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/own_write.c",
+                    "linenum": 4
+                },
+                "type": "int"
+            },
+            "text": "a"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 10,
+            "sem": "UnaryOperator",
+            "text": "++"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 10,
+            "sem": "CompoundStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 11,
+            "sem": "CompoundStmt",
+            "text": "}"
+        },
+        {
+            "kind": "Identifier",
+            "line": 12,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:own_write.c@51@F@main@b",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/own_write.c",
+                    "linenum": 5
+                },
+                "type": "int"
+            },
+            "text": "b"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 12,
+            "sem": "UnaryOperator",
+            "text": "++"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 12,
+            "sem": "CompoundStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Keyword",
+            "line": 13,
+            "sem": "ReturnStmt",
+            "text": "return"
+        },
+        {
+            "kind": "Literal",
+            "line": 13,
+            "sem": "IntegerLiteral",
+            "text": "0"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 13,
+            "sem": "CompoundStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 14,
+            "sem": "CompoundStmt",
+            "text": "}"
+        },
+        {
+            "kind": "Keyword",
+            "line": 16,
+            "sem": "FunctionDecl",
+            "text": "int"
+        },
+        {
+            "kind": "Identifier",
+            "line": 16,
+            "sem": "FunctionDecl",
+            "sym": {
+                "id": "c:@F@add",
+                "kind": "FunctionDecl",
+                "type": "int (int, int)"
+            },
+            "text": "add"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 16,
+            "sem": "FunctionDecl",
+            "text": "("
+        },
+        {
+            "kind": "Keyword",
+            "line": 16,
+            "sem": "ParmDecl",
+            "text": "int"
+        },
+        {
+            "kind": "Identifier",
+            "line": 16,
+            "sem": "ParmDecl",
+            "sym": {
+                "id": "c:own_write.c@193@F@add@a",
+                "kind": "ParmDecl",
+                "type": "int"
+            },
+            "text": "a"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 16,
+            "sem": "FunctionDecl",
+            "text": ","
+        },
+        {
+            "kind": "Keyword",
+            "line": 16,
+            "sem": "ParmDecl",
+            "text": "int"
+        },
+        {
+            "kind": "Identifier",
+            "line": 16,
+            "sem": "ParmDecl",
+            "sym": {
+                "id": "c:own_write.c@200@F@add@b",
+                "kind": "ParmDecl",
+                "type": "int"
+            },
+            "text": "b"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 16,
+            "sem": "FunctionDecl",
+            "text": ")"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 16,
+            "sem": "CompoundStmt",
+            "text": "{"
+        },
+        {
+            "kind": "Keyword",
+            "line": 17,
+            "sem": "ReturnStmt",
+            "text": "return"
+        },
+        {
+            "kind": "Identifier",
+            "line": 17,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:own_write.c@193@F@add@a",
+                "kind": "ParmDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/own_write.c",
+                    "linenum": 16
+                },
+                "type": "int"
+            },
+            "text": "a"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 17,
+            "sem": "BinaryOperator",
+            "text": "+"
+        },
+        {
+            "kind": "Identifier",
+            "line": 17,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:own_write.c@200@F@add@b",
+                "kind": "ParmDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/own_write.c",
+                    "linenum": 16
+                },
+                "type": "int"
+            },
+            "text": "b"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 17,
+            "sem": "CompoundStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 18,
+            "sem": "CompoundStmt",
+            "text": "}"
+        }
+    ]
+}

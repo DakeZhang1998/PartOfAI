@@ -1,0 +1,2086 @@
+{
+    "filename": "/sa-bAbI/tokenizer/bin/sample.c",
+    "tokens": [
+        {
+            "kind": "Keyword",
+            "line": 4,
+            "sem": "FunctionDecl",
+            "text": "int"
+        },
+        {
+            "kind": "Identifier",
+            "line": 4,
+            "sem": "FunctionDecl",
+            "sym": {
+                "id": "c:@F@fibMonaccianSearch",
+                "kind": "FunctionDecl",
+                "type": "int (int *, int, int)"
+            },
+            "text": "fibMonaccianSearch"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 4,
+            "sem": "FunctionDecl",
+            "text": "("
+        },
+        {
+            "kind": "Keyword",
+            "line": 4,
+            "sem": "ParmDecl",
+            "text": "int"
+        },
+        {
+            "kind": "Identifier",
+            "line": 4,
+            "sem": "ParmDecl",
+            "sym": {
+                "id": "c:sample.c@63@F@fibMonaccianSearch@arr",
+                "kind": "ParmDecl",
+                "type": "int []"
+            },
+            "text": "arr"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 4,
+            "sem": "ParmDecl",
+            "text": "["
+        },
+        {
+            "kind": "Punctuation",
+            "line": 4,
+            "sem": "ParmDecl",
+            "text": "]"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 4,
+            "sem": "FunctionDecl",
+            "text": ","
+        },
+        {
+            "kind": "Keyword",
+            "line": 4,
+            "sem": "ParmDecl",
+            "text": "int"
+        },
+        {
+            "kind": "Identifier",
+            "line": 4,
+            "sem": "ParmDecl",
+            "sym": {
+                "id": "c:sample.c@74@F@fibMonaccianSearch@x",
+                "kind": "ParmDecl",
+                "type": "int"
+            },
+            "text": "x"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 4,
+            "sem": "FunctionDecl",
+            "text": ","
+        },
+        {
+            "kind": "Keyword",
+            "line": 4,
+            "sem": "ParmDecl",
+            "text": "int"
+        },
+        {
+            "kind": "Identifier",
+            "line": 4,
+            "sem": "ParmDecl",
+            "sym": {
+                "id": "c:sample.c@81@F@fibMonaccianSearch@n",
+                "kind": "ParmDecl",
+                "type": "int"
+            },
+            "text": "n"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 4,
+            "sem": "FunctionDecl",
+            "text": ")"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 5,
+            "sem": "CompoundStmt",
+            "text": "{"
+        },
+        {
+            "kind": "Keyword",
+            "line": 7,
+            "sem": "VarDecl",
+            "text": "int"
+        },
+        {
+            "kind": "Identifier",
+            "line": 7,
+            "sem": "VarDecl",
+            "sym": {
+                "id": "c:sample.c@133@F@fibMonaccianSearch@fibMMm2",
+                "kind": "VarDecl",
+                "type": "int"
+            },
+            "text": "fibMMm2"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 7,
+            "sem": "VarDecl",
+            "text": "="
+        },
+        {
+            "kind": "Literal",
+            "line": 7,
+            "sem": "IntegerLiteral",
+            "text": "0"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 7,
+            "sem": "DeclStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Keyword",
+            "line": 8,
+            "sem": "VarDecl",
+            "text": "int"
+        },
+        {
+            "kind": "Identifier",
+            "line": 8,
+            "sem": "VarDecl",
+            "sym": {
+                "id": "c:sample.c@182@F@fibMonaccianSearch@fibMMm1",
+                "kind": "VarDecl",
+                "type": "int"
+            },
+            "text": "fibMMm1"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 8,
+            "sem": "VarDecl",
+            "text": "="
+        },
+        {
+            "kind": "Literal",
+            "line": 8,
+            "sem": "IntegerLiteral",
+            "text": "1"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 8,
+            "sem": "DeclStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Keyword",
+            "line": 9,
+            "sem": "VarDecl",
+            "text": "int"
+        },
+        {
+            "kind": "Identifier",
+            "line": 9,
+            "sem": "VarDecl",
+            "sym": {
+                "id": "c:sample.c@231@F@fibMonaccianSearch@fibM",
+                "kind": "VarDecl",
+                "type": "int"
+            },
+            "text": "fibM"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 9,
+            "sem": "VarDecl",
+            "text": "="
+        },
+        {
+            "kind": "Identifier",
+            "line": 9,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:sample.c@133@F@fibMonaccianSearch@fibMMm2",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/sample.c",
+                    "linenum": 7
+                },
+                "type": "int"
+            },
+            "text": "fibMMm2"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 9,
+            "sem": "BinaryOperator",
+            "text": "+"
+        },
+        {
+            "kind": "Identifier",
+            "line": 9,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:sample.c@182@F@fibMonaccianSearch@fibMMm1",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/sample.c",
+                    "linenum": 8
+                },
+                "type": "int"
+            },
+            "text": "fibMMm1"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 9,
+            "sem": "DeclStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Keyword",
+            "line": 13,
+            "sem": "WhileStmt",
+            "text": "while"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 13,
+            "sem": "WhileStmt",
+            "text": "("
+        },
+        {
+            "kind": "Identifier",
+            "line": 13,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:sample.c@231@F@fibMonaccianSearch@fibM",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/sample.c",
+                    "linenum": 9
+                },
+                "type": "int"
+            },
+            "text": "fibM"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 13,
+            "sem": "BinaryOperator",
+            "text": "<"
+        },
+        {
+            "kind": "Identifier",
+            "line": 13,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:sample.c@81@F@fibMonaccianSearch@n",
+                "kind": "ParmDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/sample.c",
+                    "linenum": 4
+                },
+                "type": "int"
+            },
+            "text": "n"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 13,
+            "sem": "WhileStmt",
+            "text": ")"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 14,
+            "sem": "CompoundStmt",
+            "text": "{"
+        },
+        {
+            "kind": "Identifier",
+            "line": 15,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:sample.c@133@F@fibMonaccianSearch@fibMMm2",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/sample.c",
+                    "linenum": 7
+                },
+                "type": "int"
+            },
+            "text": "fibMMm2"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 15,
+            "sem": "BinaryOperator",
+            "text": "="
+        },
+        {
+            "kind": "Identifier",
+            "line": 15,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:sample.c@182@F@fibMonaccianSearch@fibMMm1",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/sample.c",
+                    "linenum": 8
+                },
+                "type": "int"
+            },
+            "text": "fibMMm1"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 15,
+            "sem": "CompoundStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Identifier",
+            "line": 16,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:sample.c@182@F@fibMonaccianSearch@fibMMm1",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/sample.c",
+                    "linenum": 8
+                },
+                "type": "int"
+            },
+            "text": "fibMMm1"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 16,
+            "sem": "BinaryOperator",
+            "text": "="
+        },
+        {
+            "kind": "Identifier",
+            "line": 16,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:sample.c@231@F@fibMonaccianSearch@fibM",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/sample.c",
+                    "linenum": 9
+                },
+                "type": "int"
+            },
+            "text": "fibM"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 16,
+            "sem": "CompoundStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Identifier",
+            "line": 17,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:sample.c@231@F@fibMonaccianSearch@fibM",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/sample.c",
+                    "linenum": 9
+                },
+                "type": "int"
+            },
+            "text": "fibM"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 17,
+            "sem": "BinaryOperator",
+            "text": "="
+        },
+        {
+            "kind": "Identifier",
+            "line": 17,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:sample.c@133@F@fibMonaccianSearch@fibMMm2",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/sample.c",
+                    "linenum": 7
+                },
+                "type": "int"
+            },
+            "text": "fibMMm2"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 17,
+            "sem": "BinaryOperator",
+            "text": "+"
+        },
+        {
+            "kind": "Identifier",
+            "line": 17,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:sample.c@182@F@fibMonaccianSearch@fibMMm1",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/sample.c",
+                    "linenum": 8
+                },
+                "type": "int"
+            },
+            "text": "fibMMm1"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 17,
+            "sem": "CompoundStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 18,
+            "sem": "CompoundStmt",
+            "text": "}"
+        },
+        {
+            "kind": "Keyword",
+            "line": 21,
+            "sem": "VarDecl",
+            "text": "int"
+        },
+        {
+            "kind": "Identifier",
+            "line": 21,
+            "sem": "VarDecl",
+            "sym": {
+                "id": "c:sample.c@547@F@fibMonaccianSearch@offset",
+                "kind": "VarDecl",
+                "type": "int"
+            },
+            "text": "offset"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 21,
+            "sem": "VarDecl",
+            "text": "="
+        },
+        {
+            "kind": "Punctuation",
+            "line": 21,
+            "sem": "UnaryOperator",
+            "text": "-"
+        },
+        {
+            "kind": "Literal",
+            "line": 21,
+            "sem": "IntegerLiteral",
+            "text": "1"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 21,
+            "sem": "DeclStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Keyword",
+            "line": 26,
+            "sem": "WhileStmt",
+            "text": "while"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 26,
+            "sem": "WhileStmt",
+            "text": "("
+        },
+        {
+            "kind": "Identifier",
+            "line": 26,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:sample.c@231@F@fibMonaccianSearch@fibM",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/sample.c",
+                    "linenum": 9
+                },
+                "type": "int"
+            },
+            "text": "fibM"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 26,
+            "sem": "BinaryOperator",
+            "text": ">"
+        },
+        {
+            "kind": "Literal",
+            "line": 26,
+            "sem": "IntegerLiteral",
+            "text": "1"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 26,
+            "sem": "WhileStmt",
+            "text": ")"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 27,
+            "sem": "CompoundStmt",
+            "text": "{"
+        },
+        {
+            "kind": "Keyword",
+            "line": 31,
+            "sem": "VarDecl",
+            "text": "int"
+        },
+        {
+            "kind": "Identifier",
+            "line": 31,
+            "sem": "VarDecl",
+            "sym": {
+                "id": "c:sample.c@853@F@fibMonaccianSearch@i",
+                "kind": "VarDecl",
+                "type": "int"
+            },
+            "text": "i"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 31,
+            "sem": "VarDecl",
+            "text": "="
+        },
+        {
+            "kind": "Punctuation",
+            "line": 31,
+            "sem": "ParenExpr",
+            "text": "("
+        },
+        {
+            "kind": "Punctuation",
+            "line": 31,
+            "sem": "ParenExpr",
+            "text": "("
+        },
+        {
+            "kind": "Identifier",
+            "line": 31,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:sample.c@547@F@fibMonaccianSearch@offset",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/sample.c",
+                    "linenum": 21
+                },
+                "type": "int"
+            },
+            "text": "offset"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 31,
+            "sem": "BinaryOperator",
+            "text": "+"
+        },
+        {
+            "kind": "Identifier",
+            "line": 31,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:sample.c@133@F@fibMonaccianSearch@fibMMm2",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/sample.c",
+                    "linenum": 7
+                },
+                "type": "int"
+            },
+            "text": "fibMMm2"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 31,
+            "sem": "ParenExpr",
+            "text": ")"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 31,
+            "sem": "BinaryOperator",
+            "text": "<"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 31,
+            "sem": "ParenExpr",
+            "text": "("
+        },
+        {
+            "kind": "Identifier",
+            "line": 31,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:sample.c@81@F@fibMonaccianSearch@n",
+                "kind": "ParmDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/sample.c",
+                    "linenum": 4
+                },
+                "type": "int"
+            },
+            "text": "n"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 31,
+            "sem": "BinaryOperator",
+            "text": "-"
+        },
+        {
+            "kind": "Literal",
+            "line": 31,
+            "sem": "IntegerLiteral",
+            "text": "1"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 31,
+            "sem": "ParenExpr",
+            "text": ")"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 31,
+            "sem": "ParenExpr",
+            "text": ")"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 31,
+            "sem": "ConditionalOperator",
+            "text": "?"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 31,
+            "sem": "ParenExpr",
+            "text": "("
+        },
+        {
+            "kind": "Identifier",
+            "line": 31,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:sample.c@547@F@fibMonaccianSearch@offset",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/sample.c",
+                    "linenum": 21
+                },
+                "type": "int"
+            },
+            "text": "offset"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 31,
+            "sem": "BinaryOperator",
+            "text": "+"
+        },
+        {
+            "kind": "Identifier",
+            "line": 31,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:sample.c@133@F@fibMonaccianSearch@fibMMm2",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/sample.c",
+                    "linenum": 7
+                },
+                "type": "int"
+            },
+            "text": "fibMMm2"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 31,
+            "sem": "ParenExpr",
+            "text": ")"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 31,
+            "sem": "ConditionalOperator",
+            "text": ":"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 31,
+            "sem": "ParenExpr",
+            "text": "("
+        },
+        {
+            "kind": "Identifier",
+            "line": 31,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:sample.c@81@F@fibMonaccianSearch@n",
+                "kind": "ParmDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/sample.c",
+                    "linenum": 4
+                },
+                "type": "int"
+            },
+            "text": "n"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 31,
+            "sem": "BinaryOperator",
+            "text": "-"
+        },
+        {
+            "kind": "Literal",
+            "line": 31,
+            "sem": "IntegerLiteral",
+            "text": "1"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 31,
+            "sem": "ParenExpr",
+            "text": ")"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 31,
+            "sem": "DeclStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Keyword",
+            "line": 35,
+            "sem": "IfStmt",
+            "text": "if"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 35,
+            "sem": "IfStmt",
+            "text": "("
+        },
+        {
+            "kind": "Identifier",
+            "line": 35,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:sample.c@63@F@fibMonaccianSearch@arr",
+                "kind": "ParmDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/sample.c",
+                    "linenum": 4
+                },
+                "type": "int []"
+            },
+            "text": "arr"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 35,
+            "sem": "ArraySubscriptExpr",
+            "text": "["
+        },
+        {
+            "kind": "Identifier",
+            "line": 35,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:sample.c@853@F@fibMonaccianSearch@i",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/sample.c",
+                    "linenum": 31
+                },
+                "type": "int"
+            },
+            "text": "i"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 35,
+            "sem": "ArraySubscriptExpr",
+            "text": "]"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 35,
+            "sem": "BinaryOperator",
+            "text": "<"
+        },
+        {
+            "kind": "Identifier",
+            "line": 35,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:sample.c@74@F@fibMonaccianSearch@x",
+                "kind": "ParmDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/sample.c",
+                    "linenum": 4
+                },
+                "type": "int"
+            },
+            "text": "x"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 35,
+            "sem": "IfStmt",
+            "text": ")"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 36,
+            "sem": "CompoundStmt",
+            "text": "{"
+        },
+        {
+            "kind": "Identifier",
+            "line": 37,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:sample.c@231@F@fibMonaccianSearch@fibM",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/sample.c",
+                    "linenum": 9
+                },
+                "type": "int"
+            },
+            "text": "fibM"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 37,
+            "sem": "BinaryOperator",
+            "text": "="
+        },
+        {
+            "kind": "Identifier",
+            "line": 37,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:sample.c@182@F@fibMonaccianSearch@fibMMm1",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/sample.c",
+                    "linenum": 8
+                },
+                "type": "int"
+            },
+            "text": "fibMMm1"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 37,
+            "sem": "CompoundStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Identifier",
+            "line": 38,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:sample.c@182@F@fibMonaccianSearch@fibMMm1",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/sample.c",
+                    "linenum": 8
+                },
+                "type": "int"
+            },
+            "text": "fibMMm1"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 38,
+            "sem": "BinaryOperator",
+            "text": "="
+        },
+        {
+            "kind": "Identifier",
+            "line": 38,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:sample.c@133@F@fibMonaccianSearch@fibMMm2",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/sample.c",
+                    "linenum": 7
+                },
+                "type": "int"
+            },
+            "text": "fibMMm2"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 38,
+            "sem": "CompoundStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Identifier",
+            "line": 39,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:sample.c@133@F@fibMonaccianSearch@fibMMm2",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/sample.c",
+                    "linenum": 7
+                },
+                "type": "int"
+            },
+            "text": "fibMMm2"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 39,
+            "sem": "BinaryOperator",
+            "text": "="
+        },
+        {
+            "kind": "Identifier",
+            "line": 39,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:sample.c@231@F@fibMonaccianSearch@fibM",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/sample.c",
+                    "linenum": 9
+                },
+                "type": "int"
+            },
+            "text": "fibM"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 39,
+            "sem": "BinaryOperator",
+            "text": "-"
+        },
+        {
+            "kind": "Identifier",
+            "line": 39,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:sample.c@182@F@fibMonaccianSearch@fibMMm1",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/sample.c",
+                    "linenum": 8
+                },
+                "type": "int"
+            },
+            "text": "fibMMm1"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 39,
+            "sem": "CompoundStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Identifier",
+            "line": 40,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:sample.c@547@F@fibMonaccianSearch@offset",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/sample.c",
+                    "linenum": 21
+                },
+                "type": "int"
+            },
+            "text": "offset"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 40,
+            "sem": "BinaryOperator",
+            "text": "="
+        },
+        {
+            "kind": "Identifier",
+            "line": 40,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:sample.c@853@F@fibMonaccianSearch@i",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/sample.c",
+                    "linenum": 31
+                },
+                "type": "int"
+            },
+            "text": "i"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 40,
+            "sem": "CompoundStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 41,
+            "sem": "CompoundStmt",
+            "text": "}"
+        },
+        {
+            "kind": "Keyword",
+            "line": 45,
+            "sem": "IfStmt",
+            "text": "else"
+        },
+        {
+            "kind": "Keyword",
+            "line": 45,
+            "sem": "IfStmt",
+            "text": "if"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 45,
+            "sem": "IfStmt",
+            "text": "("
+        },
+        {
+            "kind": "Identifier",
+            "line": 45,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:sample.c@63@F@fibMonaccianSearch@arr",
+                "kind": "ParmDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/sample.c",
+                    "linenum": 4
+                },
+                "type": "int []"
+            },
+            "text": "arr"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 45,
+            "sem": "ArraySubscriptExpr",
+            "text": "["
+        },
+        {
+            "kind": "Identifier",
+            "line": 45,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:sample.c@853@F@fibMonaccianSearch@i",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/sample.c",
+                    "linenum": 31
+                },
+                "type": "int"
+            },
+            "text": "i"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 45,
+            "sem": "ArraySubscriptExpr",
+            "text": "]"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 45,
+            "sem": "BinaryOperator",
+            "text": ">"
+        },
+        {
+            "kind": "Identifier",
+            "line": 45,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:sample.c@74@F@fibMonaccianSearch@x",
+                "kind": "ParmDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/sample.c",
+                    "linenum": 4
+                },
+                "type": "int"
+            },
+            "text": "x"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 45,
+            "sem": "IfStmt",
+            "text": ")"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 46,
+            "sem": "CompoundStmt",
+            "text": "{"
+        },
+        {
+            "kind": "Identifier",
+            "line": 47,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:sample.c@231@F@fibMonaccianSearch@fibM",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/sample.c",
+                    "linenum": 9
+                },
+                "type": "int"
+            },
+            "text": "fibM"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 47,
+            "sem": "BinaryOperator",
+            "text": "="
+        },
+        {
+            "kind": "Identifier",
+            "line": 47,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:sample.c@133@F@fibMonaccianSearch@fibMMm2",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/sample.c",
+                    "linenum": 7
+                },
+                "type": "int"
+            },
+            "text": "fibMMm2"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 47,
+            "sem": "CompoundStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Identifier",
+            "line": 48,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:sample.c@182@F@fibMonaccianSearch@fibMMm1",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/sample.c",
+                    "linenum": 8
+                },
+                "type": "int"
+            },
+            "text": "fibMMm1"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 48,
+            "sem": "BinaryOperator",
+            "text": "="
+        },
+        {
+            "kind": "Identifier",
+            "line": 48,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:sample.c@182@F@fibMonaccianSearch@fibMMm1",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/sample.c",
+                    "linenum": 8
+                },
+                "type": "int"
+            },
+            "text": "fibMMm1"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 48,
+            "sem": "BinaryOperator",
+            "text": "-"
+        },
+        {
+            "kind": "Identifier",
+            "line": 48,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:sample.c@133@F@fibMonaccianSearch@fibMMm2",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/sample.c",
+                    "linenum": 7
+                },
+                "type": "int"
+            },
+            "text": "fibMMm2"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 48,
+            "sem": "CompoundStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Identifier",
+            "line": 49,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:sample.c@133@F@fibMonaccianSearch@fibMMm2",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/sample.c",
+                    "linenum": 7
+                },
+                "type": "int"
+            },
+            "text": "fibMMm2"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 49,
+            "sem": "BinaryOperator",
+            "text": "="
+        },
+        {
+            "kind": "Identifier",
+            "line": 49,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:sample.c@231@F@fibMonaccianSearch@fibM",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/sample.c",
+                    "linenum": 9
+                },
+                "type": "int"
+            },
+            "text": "fibM"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 49,
+            "sem": "BinaryOperator",
+            "text": "-"
+        },
+        {
+            "kind": "Identifier",
+            "line": 49,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:sample.c@182@F@fibMonaccianSearch@fibMMm1",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/sample.c",
+                    "linenum": 8
+                },
+                "type": "int"
+            },
+            "text": "fibMMm1"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 49,
+            "sem": "CompoundStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 50,
+            "sem": "CompoundStmt",
+            "text": "}"
+        },
+        {
+            "kind": "Keyword",
+            "line": 53,
+            "sem": "IfStmt",
+            "text": "else"
+        },
+        {
+            "kind": "Keyword",
+            "line": 53,
+            "sem": "ReturnStmt",
+            "text": "return"
+        },
+        {
+            "kind": "Identifier",
+            "line": 53,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:sample.c@853@F@fibMonaccianSearch@i",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/sample.c",
+                    "linenum": 31
+                },
+                "type": "int"
+            },
+            "text": "i"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 53,
+            "sem": "CompoundStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 54,
+            "sem": "CompoundStmt",
+            "text": "}"
+        },
+        {
+            "kind": "Keyword",
+            "line": 57,
+            "sem": "IfStmt",
+            "text": "if"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 57,
+            "sem": "IfStmt",
+            "text": "("
+        },
+        {
+            "kind": "Identifier",
+            "line": 57,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:sample.c@182@F@fibMonaccianSearch@fibMMm1",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/sample.c",
+                    "linenum": 8
+                },
+                "type": "int"
+            },
+            "text": "fibMMm1"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 57,
+            "sem": "BinaryOperator",
+            "text": "&&"
+        },
+        {
+            "kind": "Identifier",
+            "line": 57,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:sample.c@63@F@fibMonaccianSearch@arr",
+                "kind": "ParmDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/sample.c",
+                    "linenum": 4
+                },
+                "type": "int []"
+            },
+            "text": "arr"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 57,
+            "sem": "ArraySubscriptExpr",
+            "text": "["
+        },
+        {
+            "kind": "Identifier",
+            "line": 57,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:sample.c@547@F@fibMonaccianSearch@offset",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/sample.c",
+                    "linenum": 21
+                },
+                "type": "int"
+            },
+            "text": "offset"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 57,
+            "sem": "BinaryOperator",
+            "text": "+"
+        },
+        {
+            "kind": "Literal",
+            "line": 57,
+            "sem": "IntegerLiteral",
+            "text": "1"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 57,
+            "sem": "ArraySubscriptExpr",
+            "text": "]"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 57,
+            "sem": "BinaryOperator",
+            "text": "=="
+        },
+        {
+            "kind": "Identifier",
+            "line": 57,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:sample.c@74@F@fibMonaccianSearch@x",
+                "kind": "ParmDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/sample.c",
+                    "linenum": 4
+                },
+                "type": "int"
+            },
+            "text": "x"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 57,
+            "sem": "IfStmt",
+            "text": ")"
+        },
+        {
+            "kind": "Keyword",
+            "line": 57,
+            "sem": "ReturnStmt",
+            "text": "return"
+        },
+        {
+            "kind": "Identifier",
+            "line": 57,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:sample.c@547@F@fibMonaccianSearch@offset",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/sample.c",
+                    "linenum": 21
+                },
+                "type": "int"
+            },
+            "text": "offset"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 57,
+            "sem": "BinaryOperator",
+            "text": "+"
+        },
+        {
+            "kind": "Literal",
+            "line": 57,
+            "sem": "IntegerLiteral",
+            "text": "1"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 57,
+            "sem": "CompoundStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Keyword",
+            "line": 60,
+            "sem": "ReturnStmt",
+            "text": "return"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 60,
+            "sem": "UnaryOperator",
+            "text": "-"
+        },
+        {
+            "kind": "Literal",
+            "line": 60,
+            "sem": "IntegerLiteral",
+            "text": "1"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 60,
+            "sem": "CompoundStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 61,
+            "sem": "CompoundStmt",
+            "text": "}"
+        },
+        {
+            "kind": "Keyword",
+            "line": 64,
+            "sem": "FunctionDecl",
+            "text": "int"
+        },
+        {
+            "kind": "Identifier",
+            "line": 64,
+            "sem": "FunctionDecl",
+            "sym": {
+                "id": "c:@F@main",
+                "kind": "FunctionDecl",
+                "type": "int (void)"
+            },
+            "text": "main"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 64,
+            "sem": "FunctionDecl",
+            "text": "("
+        },
+        {
+            "kind": "Keyword",
+            "line": 64,
+            "sem": "FunctionDecl",
+            "text": "void"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 64,
+            "sem": "FunctionDecl",
+            "text": ")"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 65,
+            "sem": "CompoundStmt",
+            "text": "{"
+        },
+        {
+            "kind": "Keyword",
+            "line": 66,
+            "sem": "VarDecl",
+            "text": "int"
+        },
+        {
+            "kind": "Identifier",
+            "line": 66,
+            "sem": "VarDecl",
+            "sym": {
+                "id": "c:sample.c@1703@F@main@arr",
+                "kind": "VarDecl",
+                "type": "int [11]"
+            },
+            "text": "arr"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 66,
+            "sem": "VarDecl",
+            "text": "["
+        },
+        {
+            "kind": "Punctuation",
+            "line": 66,
+            "sem": "VarDecl",
+            "text": "]"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 66,
+            "sem": "VarDecl",
+            "text": "="
+        },
+        {
+            "kind": "Punctuation",
+            "line": 66,
+            "sem": "InitListExpr",
+            "text": "{"
+        },
+        {
+            "kind": "Literal",
+            "line": 66,
+            "sem": "IntegerLiteral",
+            "text": "10"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 66,
+            "sem": "InitListExpr",
+            "text": ","
+        },
+        {
+            "kind": "Literal",
+            "line": 66,
+            "sem": "IntegerLiteral",
+            "text": "22"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 66,
+            "sem": "InitListExpr",
+            "text": ","
+        },
+        {
+            "kind": "Literal",
+            "line": 66,
+            "sem": "IntegerLiteral",
+            "text": "35"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 66,
+            "sem": "InitListExpr",
+            "text": ","
+        },
+        {
+            "kind": "Literal",
+            "line": 66,
+            "sem": "IntegerLiteral",
+            "text": "40"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 66,
+            "sem": "InitListExpr",
+            "text": ","
+        },
+        {
+            "kind": "Literal",
+            "line": 66,
+            "sem": "IntegerLiteral",
+            "text": "45"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 66,
+            "sem": "InitListExpr",
+            "text": ","
+        },
+        {
+            "kind": "Literal",
+            "line": 66,
+            "sem": "IntegerLiteral",
+            "text": "50"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 66,
+            "sem": "InitListExpr",
+            "text": ","
+        },
+        {
+            "kind": "Literal",
+            "line": 66,
+            "sem": "IntegerLiteral",
+            "text": "80"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 66,
+            "sem": "InitListExpr",
+            "text": ","
+        },
+        {
+            "kind": "Literal",
+            "line": 66,
+            "sem": "IntegerLiteral",
+            "text": "82"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 66,
+            "sem": "InitListExpr",
+            "text": ","
+        },
+        {
+            "kind": "Literal",
+            "line": 67,
+            "sem": "IntegerLiteral",
+            "text": "85"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 67,
+            "sem": "InitListExpr",
+            "text": ","
+        },
+        {
+            "kind": "Literal",
+            "line": 67,
+            "sem": "IntegerLiteral",
+            "text": "90"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 67,
+            "sem": "InitListExpr",
+            "text": ","
+        },
+        {
+            "kind": "Literal",
+            "line": 67,
+            "sem": "IntegerLiteral",
+            "text": "100"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 67,
+            "sem": "InitListExpr",
+            "text": "}"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 67,
+            "sem": "DeclStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Keyword",
+            "line": 68,
+            "sem": "VarDecl",
+            "text": "int"
+        },
+        {
+            "kind": "Identifier",
+            "line": 68,
+            "sem": "VarDecl",
+            "sym": {
+                "id": "c:sample.c@1783@F@main@n",
+                "kind": "VarDecl",
+                "type": "int"
+            },
+            "text": "n"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 68,
+            "sem": "VarDecl",
+            "text": "="
+        },
+        {
+            "kind": "Keyword",
+            "line": 68,
+            "sem": "UnexposedExpr",
+            "text": "sizeof"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 68,
+            "sem": "ParenExpr",
+            "text": "("
+        },
+        {
+            "kind": "Identifier",
+            "line": 68,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:sample.c@1703@F@main@arr",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/sample.c",
+                    "linenum": 66
+                },
+                "type": "int [11]"
+            },
+            "text": "arr"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 68,
+            "sem": "ParenExpr",
+            "text": ")"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 68,
+            "sem": "BinaryOperator",
+            "text": "/"
+        },
+        {
+            "kind": "Keyword",
+            "line": 68,
+            "sem": "UnexposedExpr",
+            "text": "sizeof"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 68,
+            "sem": "ParenExpr",
+            "text": "("
+        },
+        {
+            "kind": "Identifier",
+            "line": 68,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:sample.c@1703@F@main@arr",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/sample.c",
+                    "linenum": 66
+                },
+                "type": "int [11]"
+            },
+            "text": "arr"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 68,
+            "sem": "ArraySubscriptExpr",
+            "text": "["
+        },
+        {
+            "kind": "Literal",
+            "line": 68,
+            "sem": "IntegerLiteral",
+            "text": "0"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 68,
+            "sem": "ArraySubscriptExpr",
+            "text": "]"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 68,
+            "sem": "ParenExpr",
+            "text": ")"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 68,
+            "sem": "DeclStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Keyword",
+            "line": 69,
+            "sem": "VarDecl",
+            "text": "int"
+        },
+        {
+            "kind": "Identifier",
+            "line": 69,
+            "sem": "VarDecl",
+            "sym": {
+                "id": "c:sample.c@1823@F@main@x",
+                "kind": "VarDecl",
+                "type": "int"
+            },
+            "text": "x"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 69,
+            "sem": "VarDecl",
+            "text": "="
+        },
+        {
+            "kind": "Literal",
+            "line": 69,
+            "sem": "IntegerLiteral",
+            "text": "85"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 69,
+            "sem": "DeclStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Identifier",
+            "line": 70,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:@F@printf",
+                "kind": "FunctionDecl",
+                "ref": {
+                    "file": "/usr/include/stdio.h",
+                    "linenum": 362
+                },
+                "type": "int (const char *, ...)"
+            },
+            "text": "printf"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 70,
+            "sem": "CallExpr",
+            "text": "("
+        },
+        {
+            "kind": "Literal",
+            "line": 70,
+            "sem": "StringLiteral",
+            "text": "\"Found at index: %d\""
+        },
+        {
+            "kind": "Punctuation",
+            "line": 70,
+            "sem": "CallExpr",
+            "text": ","
+        },
+        {
+            "kind": "Identifier",
+            "line": 71,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:@F@fibMonaccianSearch",
+                "kind": "FunctionDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/sample.c",
+                    "linenum": 4
+                },
+                "type": "int (int *, int, int)"
+            },
+            "text": "fibMonaccianSearch"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 71,
+            "sem": "CallExpr",
+            "text": "("
+        },
+        {
+            "kind": "Identifier",
+            "line": 71,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:sample.c@1703@F@main@arr",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/sample.c",
+                    "linenum": 66
+                },
+                "type": "int [11]"
+            },
+            "text": "arr"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 71,
+            "sem": "CallExpr",
+            "text": ","
+        },
+        {
+            "kind": "Identifier",
+            "line": 71,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:sample.c@1823@F@main@x",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/sample.c",
+                    "linenum": 69
+                },
+                "type": "int"
+            },
+            "text": "x"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 71,
+            "sem": "CallExpr",
+            "text": ","
+        },
+        {
+            "kind": "Identifier",
+            "line": 71,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:sample.c@1783@F@main@n",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/sample.c",
+                    "linenum": 68
+                },
+                "type": "int"
+            },
+            "text": "n"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 71,
+            "sem": "CallExpr",
+            "text": ")"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 71,
+            "sem": "CallExpr",
+            "text": ")"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 71,
+            "sem": "CompoundStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Keyword",
+            "line": 72,
+            "sem": "ReturnStmt",
+            "text": "return"
+        },
+        {
+            "kind": "Literal",
+            "line": 72,
+            "sem": "IntegerLiteral",
+            "text": "0"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 72,
+            "sem": "CompoundStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 73,
+            "sem": "CompoundStmt",
+            "text": "}"
+        }
+    ]
+}

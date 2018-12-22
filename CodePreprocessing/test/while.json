@@ -1,0 +1,2083 @@
+{
+    "filename": "/sa-bAbI/tokenizer/bin/while.c",
+    "tokens": [
+        {
+            "kind": "Keyword",
+            "line": 2,
+            "sem": "FunctionDecl",
+            "text": "void"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 2,
+            "sem": "FunctionDecl",
+            "text": "*"
+        },
+        {
+            "kind": "Identifier",
+            "line": 2,
+            "sem": "FunctionDecl",
+            "sym": {
+                "id": "c:@F@bioProcessBackgroundJobs",
+                "kind": "FunctionDecl",
+                "type": "void *(void *)"
+            },
+            "text": "bioProcessBackgroundJobs"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 2,
+            "sem": "FunctionDecl",
+            "text": "("
+        },
+        {
+            "kind": "Keyword",
+            "line": 2,
+            "sem": "ParmDecl",
+            "text": "void"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 2,
+            "sem": "ParmDecl",
+            "text": "*"
+        },
+        {
+            "kind": "Identifier",
+            "line": 2,
+            "sem": "ParmDecl",
+            "sym": {
+                "id": "c:while.c@51@F@bioProcessBackgroundJobs@arg",
+                "kind": "ParmDecl",
+                "type": "void *"
+            },
+            "text": "arg"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 2,
+            "sem": "FunctionDecl",
+            "text": ")"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 2,
+            "sem": "CompoundStmt",
+            "text": "{"
+        },
+        {
+            "kind": "Keyword",
+            "line": 3,
+            "sem": "StructDecl",
+            "text": "struct"
+        },
+        {
+            "kind": "Identifier",
+            "line": 3,
+            "sem": "StructDecl",
+            "sym": {
+                "id": "c:while.c@68@F@bioProcessBackgroundJobs@S@bio_job",
+                "kind": "StructDecl",
+                "type": "struct bio_job"
+            },
+            "text": "bio_job"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 3,
+            "sem": "DeclStmt",
+            "text": "*"
+        },
+        {
+            "kind": "Identifier",
+            "line": 3,
+            "sem": "VarDecl",
+            "sym": {
+                "id": "c:while.c@68@F@bioProcessBackgroundJobs@job",
+                "kind": "VarDecl",
+                "type": "struct bio_job *"
+            },
+            "text": "job"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 3,
+            "sem": "DeclStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Keyword",
+            "line": 4,
+            "sem": "VarDecl",
+            "text": "unsigned"
+        },
+        {
+            "kind": "Keyword",
+            "line": 4,
+            "sem": "VarDecl",
+            "text": "long"
+        },
+        {
+            "kind": "Identifier",
+            "line": 4,
+            "sem": "VarDecl",
+            "sym": {
+                "id": "c:while.c@93@F@bioProcessBackgroundJobs@type",
+                "kind": "VarDecl",
+                "type": "unsigned long"
+            },
+            "text": "type"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 4,
+            "sem": "VarDecl",
+            "text": "="
+        },
+        {
+            "kind": "Punctuation",
+            "line": 4,
+            "sem": "CStyleCastExpr",
+            "text": "("
+        },
+        {
+            "kind": "Keyword",
+            "line": 4,
+            "sem": "CStyleCastExpr",
+            "text": "unsigned"
+        },
+        {
+            "kind": "Keyword",
+            "line": 4,
+            "sem": "CStyleCastExpr",
+            "text": "long"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 4,
+            "sem": "CStyleCastExpr",
+            "text": ")"
+        },
+        {
+            "kind": "Identifier",
+            "line": 4,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:while.c@51@F@bioProcessBackgroundJobs@arg",
+                "kind": "ParmDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/while.c",
+                    "linenum": 2
+                },
+                "type": "void *"
+            },
+            "text": "arg"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 4,
+            "sem": "DeclStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Identifier",
+            "line": 5,
+            "sem": "TypeRef",
+            "sym": {
+                "type": "sigset_t"
+            },
+            "text": "sigset_t"
+        },
+        {
+            "kind": "Identifier",
+            "line": 5,
+            "sem": "VarDecl",
+            "sym": {
+                "id": "c:while.c@139@F@bioProcessBackgroundJobs@sigset",
+                "kind": "VarDecl",
+                "type": "sigset_t"
+            },
+            "text": "sigset"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 5,
+            "sem": "DeclStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Keyword",
+            "line": 8,
+            "sem": "IfStmt",
+            "text": "if"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 8,
+            "sem": "IfStmt",
+            "text": "("
+        },
+        {
+            "kind": "Identifier",
+            "line": 8,
+            "sem": "IfStmt",
+            "sym": null,
+            "text": "type"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 8,
+            "sem": "IfStmt",
+            "text": ">="
+        },
+        {
+            "kind": "Identifier",
+            "line": 8,
+            "sem": "IfStmt",
+            "sym": null,
+            "text": "BIO_NUM_OPS"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 8,
+            "sem": "IfStmt",
+            "text": ")"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 8,
+            "sem": "CompoundStmt",
+            "text": "{"
+        },
+        {
+            "kind": "Identifier",
+            "line": 9,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "serverLog"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 9,
+            "sem": "CompoundStmt",
+            "text": "("
+        },
+        {
+            "kind": "Identifier",
+            "line": 9,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "LL_WARNING"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 9,
+            "sem": "CompoundStmt",
+            "text": ","
+        },
+        {
+            "kind": "Literal",
+            "line": 10,
+            "sem": "CompoundStmt",
+            "text": "\"Warning: bio thread started with wrong type %lu\""
+        },
+        {
+            "kind": "Punctuation",
+            "line": 10,
+            "sem": "CompoundStmt",
+            "text": ","
+        },
+        {
+            "kind": "Identifier",
+            "line": 10,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "type"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 10,
+            "sem": "CompoundStmt",
+            "text": ")"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 10,
+            "sem": "CompoundStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Keyword",
+            "line": 11,
+            "sem": "CompoundStmt",
+            "text": "return"
+        },
+        {
+            "kind": "Identifier",
+            "line": 11,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "NULL"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 11,
+            "sem": "CompoundStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 12,
+            "sem": "CompoundStmt",
+            "text": "}"
+        },
+        {
+            "kind": "Identifier",
+            "line": 16,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "pthread_setcancelstate"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 16,
+            "sem": "CompoundStmt",
+            "text": "("
+        },
+        {
+            "kind": "Identifier",
+            "line": 16,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "PTHREAD_CANCEL_ENABLE"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 16,
+            "sem": "CompoundStmt",
+            "text": ","
+        },
+        {
+            "kind": "Identifier",
+            "line": 16,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "NULL"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 16,
+            "sem": "CompoundStmt",
+            "text": ")"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 16,
+            "sem": "CompoundStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Identifier",
+            "line": 17,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "pthread_setcanceltype"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 17,
+            "sem": "CompoundStmt",
+            "text": "("
+        },
+        {
+            "kind": "Identifier",
+            "line": 17,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "PTHREAD_CANCEL_ASYNCHRONOUS"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 17,
+            "sem": "CompoundStmt",
+            "text": ","
+        },
+        {
+            "kind": "Identifier",
+            "line": 17,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "NULL"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 17,
+            "sem": "CompoundStmt",
+            "text": ")"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 17,
+            "sem": "CompoundStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Identifier",
+            "line": 19,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "pthread_mutex_lock"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 19,
+            "sem": "CompoundStmt",
+            "text": "("
+        },
+        {
+            "kind": "Punctuation",
+            "line": 19,
+            "sem": "CompoundStmt",
+            "text": "&"
+        },
+        {
+            "kind": "Identifier",
+            "line": 19,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "bio_mutex"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 19,
+            "sem": "CompoundStmt",
+            "text": "["
+        },
+        {
+            "kind": "Identifier",
+            "line": 19,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "type"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 19,
+            "sem": "CompoundStmt",
+            "text": "]"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 19,
+            "sem": "CompoundStmt",
+            "text": ")"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 19,
+            "sem": "CompoundStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Identifier",
+            "line": 22,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "",
+                "kind": "FunctionDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/while.c",
+                    "linenum": 22
+                },
+                "type": "int ()"
+            },
+            "text": "sigemptyset"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 22,
+            "sem": "CallExpr",
+            "text": "("
+        },
+        {
+            "kind": "Punctuation",
+            "line": 22,
+            "sem": "UnaryOperator",
+            "text": "&"
+        },
+        {
+            "kind": "Identifier",
+            "line": 22,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:while.c@139@F@bioProcessBackgroundJobs@sigset",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/while.c",
+                    "linenum": 5
+                },
+                "type": "sigset_t"
+            },
+            "text": "sigset"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 22,
+            "sem": "CallExpr",
+            "text": ")"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 22,
+            "sem": "CompoundStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Identifier",
+            "line": 23,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "sigaddset"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 23,
+            "sem": "CompoundStmt",
+            "text": "("
+        },
+        {
+            "kind": "Punctuation",
+            "line": 23,
+            "sem": "CompoundStmt",
+            "text": "&"
+        },
+        {
+            "kind": "Identifier",
+            "line": 23,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "sigset"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 23,
+            "sem": "CompoundStmt",
+            "text": ","
+        },
+        {
+            "kind": "Identifier",
+            "line": 23,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "SIGALRM"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 23,
+            "sem": "CompoundStmt",
+            "text": ")"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 23,
+            "sem": "CompoundStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Keyword",
+            "line": 24,
+            "sem": "CompoundStmt",
+            "text": "if"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 24,
+            "sem": "CompoundStmt",
+            "text": "("
+        },
+        {
+            "kind": "Identifier",
+            "line": 24,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "pthread_sigmask"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 24,
+            "sem": "CompoundStmt",
+            "text": "("
+        },
+        {
+            "kind": "Identifier",
+            "line": 24,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "SIG_BLOCK"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 24,
+            "sem": "CompoundStmt",
+            "text": ","
+        },
+        {
+            "kind": "Punctuation",
+            "line": 24,
+            "sem": "CompoundStmt",
+            "text": "&"
+        },
+        {
+            "kind": "Identifier",
+            "line": 24,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "sigset"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 24,
+            "sem": "CompoundStmt",
+            "text": ","
+        },
+        {
+            "kind": "Identifier",
+            "line": 24,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "NULL"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 24,
+            "sem": "CompoundStmt",
+            "text": ")"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 24,
+            "sem": "CompoundStmt",
+            "text": ")"
+        },
+        {
+            "kind": "Identifier",
+            "line": 25,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "serverLog"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 25,
+            "sem": "CompoundStmt",
+            "text": "("
+        },
+        {
+            "kind": "Identifier",
+            "line": 25,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "LL_WARNING"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 25,
+            "sem": "CompoundStmt",
+            "text": ","
+        },
+        {
+            "kind": "Literal",
+            "line": 26,
+            "sem": "CompoundStmt",
+            "text": "\"Warning: can't mask SIGALRM in bio.c thread: %s\""
+        },
+        {
+            "kind": "Punctuation",
+            "line": 26,
+            "sem": "CompoundStmt",
+            "text": ","
+        },
+        {
+            "kind": "Identifier",
+            "line": 26,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "strerror"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 26,
+            "sem": "CompoundStmt",
+            "text": "("
+        },
+        {
+            "kind": "Identifier",
+            "line": 26,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "errno"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 26,
+            "sem": "CompoundStmt",
+            "text": ")"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 26,
+            "sem": "CompoundStmt",
+            "text": ")"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 26,
+            "sem": "CompoundStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Keyword",
+            "line": 28,
+            "sem": "WhileStmt",
+            "text": "while"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 28,
+            "sem": "WhileStmt",
+            "text": "("
+        },
+        {
+            "kind": "Literal",
+            "line": 28,
+            "sem": "IntegerLiteral",
+            "text": "1"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 28,
+            "sem": "WhileStmt",
+            "text": ")"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 28,
+            "sem": "CompoundStmt",
+            "text": "{"
+        },
+        {
+            "kind": "Identifier",
+            "line": 29,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "listNode"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 29,
+            "sem": "CompoundStmt",
+            "text": "*"
+        },
+        {
+            "kind": "Identifier",
+            "line": 29,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "ln"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 29,
+            "sem": "CompoundStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Keyword",
+            "line": 32,
+            "sem": "IfStmt",
+            "text": "if"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 32,
+            "sem": "IfStmt",
+            "text": "("
+        },
+        {
+            "kind": "Identifier",
+            "line": 32,
+            "sem": "IfStmt",
+            "sym": null,
+            "text": "listLength"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 32,
+            "sem": "IfStmt",
+            "text": "("
+        },
+        {
+            "kind": "Identifier",
+            "line": 32,
+            "sem": "IfStmt",
+            "sym": null,
+            "text": "bio_jobs"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 32,
+            "sem": "IfStmt",
+            "text": "["
+        },
+        {
+            "kind": "Identifier",
+            "line": 32,
+            "sem": "IfStmt",
+            "sym": null,
+            "text": "type"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 32,
+            "sem": "IfStmt",
+            "text": "]"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 32,
+            "sem": "IfStmt",
+            "text": ")"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 32,
+            "sem": "IfStmt",
+            "text": "=="
+        },
+        {
+            "kind": "Literal",
+            "line": 32,
+            "sem": "IfStmt",
+            "text": "0"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 32,
+            "sem": "IfStmt",
+            "text": ")"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 32,
+            "sem": "CompoundStmt",
+            "text": "{"
+        },
+        {
+            "kind": "Identifier",
+            "line": 33,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "pthread_cond_wait"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 33,
+            "sem": "CompoundStmt",
+            "text": "("
+        },
+        {
+            "kind": "Punctuation",
+            "line": 33,
+            "sem": "CompoundStmt",
+            "text": "&"
+        },
+        {
+            "kind": "Identifier",
+            "line": 33,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "bio_newjob_cond"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 33,
+            "sem": "CompoundStmt",
+            "text": "["
+        },
+        {
+            "kind": "Identifier",
+            "line": 33,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "type"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 33,
+            "sem": "CompoundStmt",
+            "text": "]"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 33,
+            "sem": "CompoundStmt",
+            "text": ","
+        },
+        {
+            "kind": "Punctuation",
+            "line": 33,
+            "sem": "CompoundStmt",
+            "text": "&"
+        },
+        {
+            "kind": "Identifier",
+            "line": 33,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "bio_mutex"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 33,
+            "sem": "CompoundStmt",
+            "text": "["
+        },
+        {
+            "kind": "Identifier",
+            "line": 33,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "type"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 33,
+            "sem": "CompoundStmt",
+            "text": "]"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 33,
+            "sem": "CompoundStmt",
+            "text": ")"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 33,
+            "sem": "CompoundStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Keyword",
+            "line": 34,
+            "sem": "ContinueStmt",
+            "text": "continue"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 34,
+            "sem": "CompoundStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 35,
+            "sem": "CompoundStmt",
+            "text": "}"
+        },
+        {
+            "kind": "Identifier",
+            "line": 37,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "ln"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 37,
+            "sem": "CompoundStmt",
+            "text": "="
+        },
+        {
+            "kind": "Identifier",
+            "line": 37,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "listFirst"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 37,
+            "sem": "CompoundStmt",
+            "text": "("
+        },
+        {
+            "kind": "Identifier",
+            "line": 37,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "bio_jobs"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 37,
+            "sem": "CompoundStmt",
+            "text": "["
+        },
+        {
+            "kind": "Identifier",
+            "line": 37,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "type"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 37,
+            "sem": "CompoundStmt",
+            "text": "]"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 37,
+            "sem": "CompoundStmt",
+            "text": ")"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 37,
+            "sem": "CompoundStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Identifier",
+            "line": 38,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "job"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 38,
+            "sem": "CompoundStmt",
+            "text": "="
+        },
+        {
+            "kind": "Identifier",
+            "line": 38,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "ln"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 38,
+            "sem": "CompoundStmt",
+            "text": "->"
+        },
+        {
+            "kind": "Identifier",
+            "line": 38,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "value"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 38,
+            "sem": "CompoundStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Identifier",
+            "line": 41,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "pthread_mutex_unlock"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 41,
+            "sem": "CompoundStmt",
+            "text": "("
+        },
+        {
+            "kind": "Punctuation",
+            "line": 41,
+            "sem": "CompoundStmt",
+            "text": "&"
+        },
+        {
+            "kind": "Identifier",
+            "line": 41,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "bio_mutex"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 41,
+            "sem": "CompoundStmt",
+            "text": "["
+        },
+        {
+            "kind": "Identifier",
+            "line": 41,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "type"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 41,
+            "sem": "CompoundStmt",
+            "text": "]"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 41,
+            "sem": "CompoundStmt",
+            "text": ")"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 41,
+            "sem": "CompoundStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Keyword",
+            "line": 44,
+            "sem": "IfStmt",
+            "text": "if"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 44,
+            "sem": "IfStmt",
+            "text": "("
+        },
+        {
+            "kind": "Identifier",
+            "line": 44,
+            "sem": "IfStmt",
+            "sym": null,
+            "text": "type"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 44,
+            "sem": "IfStmt",
+            "text": "=="
+        },
+        {
+            "kind": "Identifier",
+            "line": 44,
+            "sem": "IfStmt",
+            "sym": null,
+            "text": "BIO_CLOSE_FILE"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 44,
+            "sem": "IfStmt",
+            "text": ")"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 44,
+            "sem": "CompoundStmt",
+            "text": "{"
+        },
+        {
+            "kind": "Identifier",
+            "line": 45,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "close"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 45,
+            "sem": "CompoundStmt",
+            "text": "("
+        },
+        {
+            "kind": "Punctuation",
+            "line": 45,
+            "sem": "CompoundStmt",
+            "text": "("
+        },
+        {
+            "kind": "Keyword",
+            "line": 45,
+            "sem": "CompoundStmt",
+            "text": "long"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 45,
+            "sem": "CompoundStmt",
+            "text": ")"
+        },
+        {
+            "kind": "Identifier",
+            "line": 45,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "job"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 45,
+            "sem": "CompoundStmt",
+            "text": "->"
+        },
+        {
+            "kind": "Identifier",
+            "line": 45,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "arg1"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 45,
+            "sem": "CompoundStmt",
+            "text": ")"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 45,
+            "sem": "CompoundStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 46,
+            "sem": "CompoundStmt",
+            "text": "}"
+        },
+        {
+            "kind": "Keyword",
+            "line": 46,
+            "sem": "IfStmt",
+            "text": "else"
+        },
+        {
+            "kind": "Keyword",
+            "line": 46,
+            "sem": "IfStmt",
+            "text": "if"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 46,
+            "sem": "IfStmt",
+            "text": "("
+        },
+        {
+            "kind": "Identifier",
+            "line": 46,
+            "sem": "IfStmt",
+            "sym": null,
+            "text": "type"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 46,
+            "sem": "IfStmt",
+            "text": "=="
+        },
+        {
+            "kind": "Identifier",
+            "line": 46,
+            "sem": "IfStmt",
+            "sym": null,
+            "text": "BIO_AOF_FSYNC"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 46,
+            "sem": "IfStmt",
+            "text": ")"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 46,
+            "sem": "CompoundStmt",
+            "text": "{"
+        },
+        {
+            "kind": "Identifier",
+            "line": 47,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "redis_fsync"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 47,
+            "sem": "CompoundStmt",
+            "text": "("
+        },
+        {
+            "kind": "Punctuation",
+            "line": 47,
+            "sem": "CompoundStmt",
+            "text": "("
+        },
+        {
+            "kind": "Keyword",
+            "line": 47,
+            "sem": "CompoundStmt",
+            "text": "long"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 47,
+            "sem": "CompoundStmt",
+            "text": ")"
+        },
+        {
+            "kind": "Identifier",
+            "line": 47,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "job"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 47,
+            "sem": "CompoundStmt",
+            "text": "->"
+        },
+        {
+            "kind": "Identifier",
+            "line": 47,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "arg1"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 47,
+            "sem": "CompoundStmt",
+            "text": ")"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 47,
+            "sem": "CompoundStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 48,
+            "sem": "CompoundStmt",
+            "text": "}"
+        },
+        {
+            "kind": "Keyword",
+            "line": 48,
+            "sem": "IfStmt",
+            "text": "else"
+        },
+        {
+            "kind": "Keyword",
+            "line": 48,
+            "sem": "IfStmt",
+            "text": "if"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 48,
+            "sem": "IfStmt",
+            "text": "("
+        },
+        {
+            "kind": "Identifier",
+            "line": 48,
+            "sem": "IfStmt",
+            "sym": null,
+            "text": "type"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 48,
+            "sem": "IfStmt",
+            "text": "=="
+        },
+        {
+            "kind": "Identifier",
+            "line": 48,
+            "sem": "IfStmt",
+            "sym": null,
+            "text": "BIO_LAZY_FREE"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 48,
+            "sem": "IfStmt",
+            "text": ")"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 48,
+            "sem": "CompoundStmt",
+            "text": "{"
+        },
+        {
+            "kind": "Keyword",
+            "line": 53,
+            "sem": "CompoundStmt",
+            "text": "if"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 53,
+            "sem": "CompoundStmt",
+            "text": "("
+        },
+        {
+            "kind": "Identifier",
+            "line": 53,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "job"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 53,
+            "sem": "CompoundStmt",
+            "text": "->"
+        },
+        {
+            "kind": "Identifier",
+            "line": 53,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "arg1"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 53,
+            "sem": "CompoundStmt",
+            "text": ")"
+        },
+        {
+            "kind": "Identifier",
+            "line": 54,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "lazyfreeFreeObjectFromBioThread"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 54,
+            "sem": "CompoundStmt",
+            "text": "("
+        },
+        {
+            "kind": "Identifier",
+            "line": 54,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "job"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 54,
+            "sem": "CompoundStmt",
+            "text": "->"
+        },
+        {
+            "kind": "Identifier",
+            "line": 54,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "arg1"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 54,
+            "sem": "CompoundStmt",
+            "text": ")"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 54,
+            "sem": "CompoundStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Keyword",
+            "line": 55,
+            "sem": "CompoundStmt",
+            "text": "else"
+        },
+        {
+            "kind": "Keyword",
+            "line": 55,
+            "sem": "CompoundStmt",
+            "text": "if"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 55,
+            "sem": "CompoundStmt",
+            "text": "("
+        },
+        {
+            "kind": "Identifier",
+            "line": 55,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "job"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 55,
+            "sem": "CompoundStmt",
+            "text": "->"
+        },
+        {
+            "kind": "Identifier",
+            "line": 55,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "arg2"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 55,
+            "sem": "CompoundStmt",
+            "text": "&&"
+        },
+        {
+            "kind": "Identifier",
+            "line": 55,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "job"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 55,
+            "sem": "CompoundStmt",
+            "text": "->"
+        },
+        {
+            "kind": "Identifier",
+            "line": 55,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "arg3"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 55,
+            "sem": "CompoundStmt",
+            "text": ")"
+        },
+        {
+            "kind": "Identifier",
+            "line": 56,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "lazyfreeFreeDatabaseFromBioThread"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 56,
+            "sem": "CompoundStmt",
+            "text": "("
+        },
+        {
+            "kind": "Identifier",
+            "line": 56,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "job"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 56,
+            "sem": "CompoundStmt",
+            "text": "->"
+        },
+        {
+            "kind": "Identifier",
+            "line": 56,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "arg2"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 56,
+            "sem": "CompoundStmt",
+            "text": ","
+        },
+        {
+            "kind": "Identifier",
+            "line": 56,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "job"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 56,
+            "sem": "CompoundStmt",
+            "text": "->"
+        },
+        {
+            "kind": "Identifier",
+            "line": 56,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "arg3"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 56,
+            "sem": "CompoundStmt",
+            "text": ")"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 56,
+            "sem": "CompoundStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Keyword",
+            "line": 57,
+            "sem": "CompoundStmt",
+            "text": "else"
+        },
+        {
+            "kind": "Keyword",
+            "line": 57,
+            "sem": "CompoundStmt",
+            "text": "if"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 57,
+            "sem": "CompoundStmt",
+            "text": "("
+        },
+        {
+            "kind": "Identifier",
+            "line": 57,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "job"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 57,
+            "sem": "CompoundStmt",
+            "text": "->"
+        },
+        {
+            "kind": "Identifier",
+            "line": 57,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "arg3"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 57,
+            "sem": "CompoundStmt",
+            "text": ")"
+        },
+        {
+            "kind": "Identifier",
+            "line": 58,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "lazyfreeFreeSlotsMapFromBioThread"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 58,
+            "sem": "CompoundStmt",
+            "text": "("
+        },
+        {
+            "kind": "Identifier",
+            "line": 58,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "job"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 58,
+            "sem": "CompoundStmt",
+            "text": "->"
+        },
+        {
+            "kind": "Identifier",
+            "line": 58,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "arg3"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 58,
+            "sem": "CompoundStmt",
+            "text": ")"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 58,
+            "sem": "CompoundStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 59,
+            "sem": "CompoundStmt",
+            "text": "}"
+        },
+        {
+            "kind": "Keyword",
+            "line": 59,
+            "sem": "IfStmt",
+            "text": "else"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 59,
+            "sem": "CompoundStmt",
+            "text": "{"
+        },
+        {
+            "kind": "Identifier",
+            "line": 60,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "",
+                "kind": "FunctionDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/while.c",
+                    "linenum": 60
+                },
+                "type": "int ()"
+            },
+            "text": "serverPanic"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 60,
+            "sem": "CallExpr",
+            "text": "("
+        },
+        {
+            "kind": "Literal",
+            "line": 60,
+            "sem": "StringLiteral",
+            "text": "\"Wrong job type in bioProcessBackgroundJobs().\""
+        },
+        {
+            "kind": "Punctuation",
+            "line": 60,
+            "sem": "CallExpr",
+            "text": ")"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 60,
+            "sem": "CompoundStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 61,
+            "sem": "CompoundStmt",
+            "text": "}"
+        },
+        {
+            "kind": "Identifier",
+            "line": 62,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "",
+                "kind": "FunctionDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/while.c",
+                    "linenum": 62
+                },
+                "type": "int ()"
+            },
+            "text": "zfree"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 62,
+            "sem": "CallExpr",
+            "text": "("
+        },
+        {
+            "kind": "Identifier",
+            "line": 62,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:while.c@68@F@bioProcessBackgroundJobs@job",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/while.c",
+                    "linenum": 3
+                },
+                "type": "struct bio_job *"
+            },
+            "text": "job"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 62,
+            "sem": "CallExpr",
+            "text": ")"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 62,
+            "sem": "CompoundStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Identifier",
+            "line": 66,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "pthread_mutex_lock"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 66,
+            "sem": "CompoundStmt",
+            "text": "("
+        },
+        {
+            "kind": "Punctuation",
+            "line": 66,
+            "sem": "CompoundStmt",
+            "text": "&"
+        },
+        {
+            "kind": "Identifier",
+            "line": 66,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "bio_mutex"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 66,
+            "sem": "CompoundStmt",
+            "text": "["
+        },
+        {
+            "kind": "Identifier",
+            "line": 66,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "type"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 66,
+            "sem": "CompoundStmt",
+            "text": "]"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 66,
+            "sem": "CompoundStmt",
+            "text": ")"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 66,
+            "sem": "CompoundStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Identifier",
+            "line": 67,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "listDelNode"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 67,
+            "sem": "CompoundStmt",
+            "text": "("
+        },
+        {
+            "kind": "Identifier",
+            "line": 67,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "bio_jobs"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 67,
+            "sem": "CompoundStmt",
+            "text": "["
+        },
+        {
+            "kind": "Identifier",
+            "line": 67,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "type"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 67,
+            "sem": "CompoundStmt",
+            "text": "]"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 67,
+            "sem": "CompoundStmt",
+            "text": ","
+        },
+        {
+            "kind": "Identifier",
+            "line": 67,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "ln"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 67,
+            "sem": "CompoundStmt",
+            "text": ")"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 67,
+            "sem": "CompoundStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Identifier",
+            "line": 68,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "bio_pending"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 68,
+            "sem": "CompoundStmt",
+            "text": "["
+        },
+        {
+            "kind": "Identifier",
+            "line": 68,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "type"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 68,
+            "sem": "CompoundStmt",
+            "text": "]"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 68,
+            "sem": "CompoundStmt",
+            "text": "--"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 68,
+            "sem": "CompoundStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Identifier",
+            "line": 71,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "pthread_cond_broadcast"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 71,
+            "sem": "CompoundStmt",
+            "text": "("
+        },
+        {
+            "kind": "Punctuation",
+            "line": 71,
+            "sem": "CompoundStmt",
+            "text": "&"
+        },
+        {
+            "kind": "Identifier",
+            "line": 71,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "bio_step_cond"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 71,
+            "sem": "CompoundStmt",
+            "text": "["
+        },
+        {
+            "kind": "Identifier",
+            "line": 71,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "type"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 71,
+            "sem": "CompoundStmt",
+            "text": "]"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 71,
+            "sem": "CompoundStmt",
+            "text": ")"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 71,
+            "sem": "CompoundStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 72,
+            "sem": "CompoundStmt",
+            "text": "}"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 73,
+            "sem": "CompoundStmt",
+            "text": "}"
+        }
+    ]
+}

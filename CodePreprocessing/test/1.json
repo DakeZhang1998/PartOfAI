@@ -1,0 +1,914 @@
+{
+    "filename": "/sa-bAbI/working/sa-train-real/src/1.c",
+    "tokens": [
+        {
+            "kind": "Keyword",
+            "line": 2,
+            "sem": "StructDecl",
+            "text": "struct"
+        },
+        {
+            "kind": "Identifier",
+            "line": 2,
+            "sem": "StructDecl",
+            "sym": {
+                "id": "c:@S@entity_4",
+                "kind": "StructDecl",
+                "type": "struct entity_4"
+            },
+            "text": "entity_4"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 2,
+            "sem": "StructDecl",
+            "text": "{"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 2,
+            "sem": "StructDecl",
+            "text": "}"
+        },
+        {
+            "kind": "Keyword",
+            "line": 3,
+            "sem": "StructDecl",
+            "text": "struct"
+        },
+        {
+            "kind": "Identifier",
+            "line": 3,
+            "sem": "StructDecl",
+            "sym": {
+                "id": "c:@S@entity_6",
+                "kind": "StructDecl",
+                "type": "struct entity_6"
+            },
+            "text": "entity_6"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 3,
+            "sem": "StructDecl",
+            "text": "{"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 3,
+            "sem": "StructDecl",
+            "text": "}"
+        },
+        {
+            "kind": "Keyword",
+            "line": 4,
+            "sem": "FunctionDecl",
+            "text": "int"
+        },
+        {
+            "kind": "Identifier",
+            "line": 4,
+            "sem": "FunctionDecl",
+            "sym": {
+                "id": "c:@F@main",
+                "kind": "FunctionDecl",
+                "type": "int ()"
+            },
+            "text": "main"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 4,
+            "sem": "FunctionDecl",
+            "text": "("
+        },
+        {
+            "kind": "Punctuation",
+            "line": 4,
+            "sem": "FunctionDecl",
+            "text": ")"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 4,
+            "sem": "CompoundStmt",
+            "text": "{"
+        },
+        {
+            "kind": "Keyword",
+            "line": 5,
+            "sem": "VarDecl",
+            "text": "int"
+        },
+        {
+            "kind": "Identifier",
+            "line": 5,
+            "sem": "VarDecl",
+            "sym": {
+                "id": "c:1.c@70@F@main@entity_1",
+                "kind": "VarDecl",
+                "type": "int"
+            },
+            "text": "entity_1"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 5,
+            "sem": "VarDecl",
+            "text": "="
+        },
+        {
+            "kind": "Identifier",
+            "line": 5,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:@F@rand",
+                "kind": "FunctionDecl",
+                "ref": {
+                    "file": "/usr/include/stdlib.h",
+                    "linenum": 374
+                },
+                "type": "int (void)"
+            },
+            "text": "rand"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 5,
+            "sem": "CallExpr",
+            "text": "("
+        },
+        {
+            "kind": "Punctuation",
+            "line": 5,
+            "sem": "CallExpr",
+            "text": ")"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 5,
+            "sem": "DeclStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Keyword",
+            "line": 7,
+            "sem": "VarDecl",
+            "text": "const"
+        },
+        {
+            "kind": "Keyword",
+            "line": 7,
+            "sem": "VarDecl",
+            "text": "int"
+        },
+        {
+            "kind": "Identifier",
+            "line": 7,
+            "sem": "VarDecl",
+            "sym": {
+                "id": "c:1.c@92@F@main@entity_2",
+                "kind": "VarDecl",
+                "type": "const int"
+            },
+            "text": "entity_2"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 7,
+            "sem": "VarDecl",
+            "text": "="
+        },
+        {
+            "kind": "Literal",
+            "line": 7,
+            "sem": "IntegerLiteral",
+            "text": "100"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 7,
+            "sem": "DeclStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Keyword",
+            "line": 8,
+            "sem": "VarDecl",
+            "text": "static"
+        },
+        {
+            "kind": "Keyword",
+            "line": 8,
+            "sem": "VarDecl",
+            "text": "unsigned"
+        },
+        {
+            "kind": "Keyword",
+            "line": 8,
+            "sem": "VarDecl",
+            "text": "long"
+        },
+        {
+            "kind": "Keyword",
+            "line": 8,
+            "sem": "VarDecl",
+            "text": "long"
+        },
+        {
+            "kind": "Identifier",
+            "line": 8,
+            "sem": "VarDecl",
+            "sym": {
+                "id": "c:1.c@120@F@main@entity_3",
+                "kind": "VarDecl",
+                "type": "unsigned long long [100]"
+            },
+            "text": "entity_3"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 8,
+            "sem": "VarDecl",
+            "text": "["
+        },
+        {
+            "kind": "Identifier",
+            "line": 8,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:1.c@92@F@main@entity_2",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/working/sa-train-real/src/1.c",
+                    "linenum": 7
+                },
+                "type": "const int"
+            },
+            "text": "entity_2"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 8,
+            "sem": "VarDecl",
+            "text": "]"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 8,
+            "sem": "DeclStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Keyword",
+            "line": 9,
+            "sem": "VarDecl",
+            "text": "static"
+        },
+        {
+            "kind": "Keyword",
+            "line": 9,
+            "sem": "VarDecl",
+            "text": "struct"
+        },
+        {
+            "kind": "Identifier",
+            "line": 9,
+            "sem": "TypeRef",
+            "sym": {
+                "type": "struct entity_4"
+            },
+            "text": "entity_4"
+        },
+        {
+            "kind": "Identifier",
+            "line": 9,
+            "sem": "VarDecl",
+            "sym": {
+                "id": "c:1.c@171@F@main@entity_5",
+                "kind": "VarDecl",
+                "type": "struct entity_4 [100]"
+            },
+            "text": "entity_5"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 9,
+            "sem": "VarDecl",
+            "text": "["
+        },
+        {
+            "kind": "Identifier",
+            "line": 9,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:1.c@92@F@main@entity_2",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/working/sa-train-real/src/1.c",
+                    "linenum": 7
+                },
+                "type": "const int"
+            },
+            "text": "entity_2"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 9,
+            "sem": "VarDecl",
+            "text": "]"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 9,
+            "sem": "DeclStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Keyword",
+            "line": 10,
+            "sem": "VarDecl",
+            "text": "static"
+        },
+        {
+            "kind": "Keyword",
+            "line": 10,
+            "sem": "VarDecl",
+            "text": "struct"
+        },
+        {
+            "kind": "Identifier",
+            "line": 10,
+            "sem": "TypeRef",
+            "sym": {
+                "type": "struct entity_6"
+            },
+            "text": "entity_6"
+        },
+        {
+            "kind": "Identifier",
+            "line": 10,
+            "sem": "VarDecl",
+            "sym": {
+                "id": "c:1.c@219@F@main@entity_7",
+                "kind": "VarDecl",
+                "type": "struct entity_6 [100]"
+            },
+            "text": "entity_7"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 10,
+            "sem": "VarDecl",
+            "text": "["
+        },
+        {
+            "kind": "Identifier",
+            "line": 10,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:1.c@92@F@main@entity_2",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/working/sa-train-real/src/1.c",
+                    "linenum": 7
+                },
+                "type": "const int"
+            },
+            "text": "entity_2"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 10,
+            "sem": "VarDecl",
+            "text": "]"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 10,
+            "sem": "DeclStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Keyword",
+            "line": 11,
+            "sem": "VarDecl",
+            "text": "unsigned"
+        },
+        {
+            "kind": "Keyword",
+            "line": 11,
+            "sem": "VarDecl",
+            "text": "long"
+        },
+        {
+            "kind": "Keyword",
+            "line": 11,
+            "sem": "VarDecl",
+            "text": "long"
+        },
+        {
+            "kind": "Identifier",
+            "line": 11,
+            "sem": "VarDecl",
+            "sym": {
+                "id": "c:1.c@267@F@main@entity_8",
+                "kind": "VarDecl",
+                "type": "unsigned long long"
+            },
+            "text": "entity_8"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 11,
+            "sem": "DeclStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Identifier",
+            "line": 12,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "",
+                "kind": "FunctionDecl",
+                "ref": {
+                    "file": "/sa-bAbI/working/sa-train-real/src/1.c",
+                    "linenum": 12
+                },
+                "type": "int ()"
+            },
+            "text": "pthread_mutex_lock"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 12,
+            "sem": "CallExpr",
+            "text": "("
+        },
+        {
+            "kind": "Punctuation",
+            "line": 12,
+            "sem": "UnaryOperator",
+            "text": "&"
+        },
+        {
+            "kind": "Identifier",
+            "line": 12,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:1.c@171@F@main@entity_5",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/working/sa-train-real/src/1.c",
+                    "linenum": 9
+                },
+                "type": "struct entity_4 [100]"
+            },
+            "text": "entity_5"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 12,
+            "sem": "ArraySubscriptExpr",
+            "text": "["
+        },
+        {
+            "kind": "Identifier",
+            "line": 12,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:1.c@70@F@main@entity_1",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/working/sa-train-real/src/1.c",
+                    "linenum": 5
+                },
+                "type": "int"
+            },
+            "text": "entity_1"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 12,
+            "sem": "ArraySubscriptExpr",
+            "text": "]"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 12,
+            "sem": "CallExpr",
+            "text": ")"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 12,
+            "sem": "CompoundStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Identifier",
+            "line": 13,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:1.c@267@F@main@entity_8",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/working/sa-train-real/src/1.c",
+                    "linenum": 11
+                },
+                "type": "unsigned long long"
+            },
+            "text": "entity_8"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 13,
+            "sem": "BinaryOperator",
+            "text": "="
+        },
+        {
+            "kind": "Identifier",
+            "line": 13,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:@F@rand",
+                "kind": "FunctionDecl",
+                "ref": {
+                    "file": "/usr/include/stdlib.h",
+                    "linenum": 374
+                },
+                "type": "int (void)"
+            },
+            "text": "rand"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 13,
+            "sem": "CallExpr",
+            "text": "("
+        },
+        {
+            "kind": "Punctuation",
+            "line": 13,
+            "sem": "CallExpr",
+            "text": ")"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 13,
+            "sem": "CompoundStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Keyword",
+            "line": 14,
+            "sem": "IfStmt",
+            "text": "if"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 14,
+            "sem": "IfStmt",
+            "text": "("
+        },
+        {
+            "kind": "Identifier",
+            "line": 14,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:@F@rand",
+                "kind": "FunctionDecl",
+                "ref": {
+                    "file": "/usr/include/stdlib.h",
+                    "linenum": 374
+                },
+                "type": "int (void)"
+            },
+            "text": "rand"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 14,
+            "sem": "CallExpr",
+            "text": "("
+        },
+        {
+            "kind": "Punctuation",
+            "line": 14,
+            "sem": "CallExpr",
+            "text": ")"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 14,
+            "sem": "IfStmt",
+            "text": ")"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 14,
+            "sem": "CompoundStmt",
+            "text": "{"
+        },
+        {
+            "kind": "Identifier",
+            "line": 15,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "",
+                "kind": "FunctionDecl",
+                "ref": {
+                    "file": "/sa-bAbI/working/sa-train-real/src/1.c",
+                    "linenum": 15
+                },
+                "type": "int ()"
+            },
+            "text": "pthread_cond_wait"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 15,
+            "sem": "CallExpr",
+            "text": "("
+        },
+        {
+            "kind": "Punctuation",
+            "line": 15,
+            "sem": "UnaryOperator",
+            "text": "&"
+        },
+        {
+            "kind": "Identifier",
+            "line": 15,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:1.c@219@F@main@entity_7",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/working/sa-train-real/src/1.c",
+                    "linenum": 10
+                },
+                "type": "struct entity_6 [100]"
+            },
+            "text": "entity_7"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 15,
+            "sem": "ArraySubscriptExpr",
+            "text": "["
+        },
+        {
+            "kind": "Identifier",
+            "line": 15,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:1.c@70@F@main@entity_1",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/working/sa-train-real/src/1.c",
+                    "linenum": 5
+                },
+                "type": "int"
+            },
+            "text": "entity_1"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 15,
+            "sem": "ArraySubscriptExpr",
+            "text": "]"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 15,
+            "sem": "CallExpr",
+            "text": ","
+        },
+        {
+            "kind": "Punctuation",
+            "line": 15,
+            "sem": "UnaryOperator",
+            "text": "&"
+        },
+        {
+            "kind": "Identifier",
+            "line": 15,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:1.c@171@F@main@entity_5",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/working/sa-train-real/src/1.c",
+                    "linenum": 9
+                },
+                "type": "struct entity_4 [100]"
+            },
+            "text": "entity_5"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 15,
+            "sem": "ArraySubscriptExpr",
+            "text": "["
+        },
+        {
+            "kind": "Identifier",
+            "line": 15,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:1.c@70@F@main@entity_1",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/working/sa-train-real/src/1.c",
+                    "linenum": 5
+                },
+                "type": "int"
+            },
+            "text": "entity_1"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 15,
+            "sem": "ArraySubscriptExpr",
+            "text": "]"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 15,
+            "sem": "CallExpr",
+            "text": ")"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 15,
+            "sem": "CompoundStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Identifier",
+            "line": 16,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:1.c@267@F@main@entity_8",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/working/sa-train-real/src/1.c",
+                    "linenum": 11
+                },
+                "type": "unsigned long long"
+            },
+            "text": "entity_8"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 16,
+            "sem": "BinaryOperator",
+            "text": "="
+        },
+        {
+            "kind": "Identifier",
+            "line": 16,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:@F@rand",
+                "kind": "FunctionDecl",
+                "ref": {
+                    "file": "/usr/include/stdlib.h",
+                    "linenum": 374
+                },
+                "type": "int (void)"
+            },
+            "text": "rand"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 16,
+            "sem": "CallExpr",
+            "text": "("
+        },
+        {
+            "kind": "Punctuation",
+            "line": 16,
+            "sem": "CallExpr",
+            "text": ")"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 16,
+            "sem": "CompoundStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 17,
+            "sem": "CompoundStmt",
+            "text": "}"
+        },
+        {
+            "kind": "Identifier",
+            "line": 18,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "",
+                "kind": "FunctionDecl",
+                "ref": {
+                    "file": "/sa-bAbI/working/sa-train-real/src/1.c",
+                    "linenum": 18
+                },
+                "type": "int ()"
+            },
+            "text": "pthread_mutex_unlock"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 18,
+            "sem": "CallExpr",
+            "text": "("
+        },
+        {
+            "kind": "Punctuation",
+            "line": 18,
+            "sem": "UnaryOperator",
+            "text": "&"
+        },
+        {
+            "kind": "Identifier",
+            "line": 18,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:1.c@171@F@main@entity_5",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/working/sa-train-real/src/1.c",
+                    "linenum": 9
+                },
+                "type": "struct entity_4 [100]"
+            },
+            "text": "entity_5"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 18,
+            "sem": "ArraySubscriptExpr",
+            "text": "["
+        },
+        {
+            "kind": "Identifier",
+            "line": 18,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:1.c@70@F@main@entity_1",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/working/sa-train-real/src/1.c",
+                    "linenum": 5
+                },
+                "type": "int"
+            },
+            "text": "entity_1"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 18,
+            "sem": "ArraySubscriptExpr",
+            "text": "]"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 18,
+            "sem": "CallExpr",
+            "text": ")"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 18,
+            "sem": "CompoundStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Keyword",
+            "line": 19,
+            "sem": "ReturnStmt",
+            "text": "return"
+        },
+        {
+            "kind": "Literal",
+            "line": 19,
+            "sem": "IntegerLiteral",
+            "text": "0"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 19,
+            "sem": "CompoundStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 20,
+            "sem": "CompoundStmt",
+            "text": "}"
+        }
+    ]
+}

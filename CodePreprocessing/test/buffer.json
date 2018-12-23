@@ -1,0 +1,989 @@
+{
+    "filename": "/sa-bAbI/tokenizer/bin/buffer.c",
+    "tokens": [
+        {
+            "kind": "Keyword",
+            "line": 3,
+            "sem": "FunctionDecl",
+            "text": "int"
+        },
+        {
+            "kind": "Identifier",
+            "line": 3,
+            "sem": "FunctionDecl",
+            "sym": {
+                "id": "c:@F@main",
+                "kind": "FunctionDecl",
+                "type": "int ()"
+            },
+            "text": "main"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 3,
+            "sem": "FunctionDecl",
+            "text": "("
+        },
+        {
+            "kind": "Punctuation",
+            "line": 3,
+            "sem": "FunctionDecl",
+            "text": ")"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 3,
+            "sem": "CompoundStmt",
+            "text": "{"
+        },
+        {
+            "kind": "Keyword",
+            "line": 4,
+            "sem": "VarDecl",
+            "text": "int"
+        },
+        {
+            "kind": "Identifier",
+            "line": 4,
+            "sem": "VarDecl",
+            "sym": {
+                "id": "c:buffer.c@33@F@main@buffer",
+                "kind": "VarDecl",
+                "type": "int [2]"
+            },
+            "text": "buffer"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 4,
+            "sem": "VarDecl",
+            "text": "["
+        },
+        {
+            "kind": "Literal",
+            "line": 4,
+            "sem": "IntegerLiteral",
+            "text": "2"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 4,
+            "sem": "VarDecl",
+            "text": "]"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 4,
+            "sem": "DeclStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Keyword",
+            "line": 5,
+            "sem": "VarDecl",
+            "text": "int"
+        },
+        {
+            "kind": "Identifier",
+            "line": 5,
+            "sem": "VarDecl",
+            "sym": {
+                "id": "c:buffer.c@49@F@main@a",
+                "kind": "VarDecl",
+                "type": "int"
+            },
+            "text": "a"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 5,
+            "sem": "DeclStmt",
+            "text": ","
+        },
+        {
+            "kind": "Identifier",
+            "line": 5,
+            "sem": "VarDecl",
+            "sym": {
+                "id": "c:buffer.c@49@F@main@b",
+                "kind": "VarDecl",
+                "type": "int"
+            },
+            "text": "b"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 5,
+            "sem": "DeclStmt",
+            "text": ","
+        },
+        {
+            "kind": "Identifier",
+            "line": 5,
+            "sem": "VarDecl",
+            "sym": {
+                "id": "c:buffer.c@49@F@main@c",
+                "kind": "VarDecl",
+                "type": "int"
+            },
+            "text": "c"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 5,
+            "sem": "DeclStmt",
+            "text": ","
+        },
+        {
+            "kind": "Identifier",
+            "line": 5,
+            "sem": "VarDecl",
+            "sym": {
+                "id": "c:buffer.c@49@F@main@d",
+                "kind": "VarDecl",
+                "type": "int"
+            },
+            "text": "d"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 5,
+            "sem": "DeclStmt",
+            "text": ","
+        },
+        {
+            "kind": "Identifier",
+            "line": 5,
+            "sem": "VarDecl",
+            "sym": {
+                "id": "c:buffer.c@49@F@main@cur",
+                "kind": "VarDecl",
+                "type": "int"
+            },
+            "text": "cur"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 5,
+            "sem": "VarDecl",
+            "text": "="
+        },
+        {
+            "kind": "Literal",
+            "line": 5,
+            "sem": "IntegerLiteral",
+            "text": "0"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 5,
+            "sem": "DeclStmt",
+            "text": ","
+        },
+        {
+            "kind": "Identifier",
+            "line": 5,
+            "sem": "VarDecl",
+            "sym": {
+                "id": "c:buffer.c@49@F@main@carry",
+                "kind": "VarDecl",
+                "type": "int"
+            },
+            "text": "carry"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 5,
+            "sem": "VarDecl",
+            "text": "="
+        },
+        {
+            "kind": "Literal",
+            "line": 5,
+            "sem": "IntegerLiteral",
+            "text": "0"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 5,
+            "sem": "DeclStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Identifier",
+            "line": 6,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:buffer.c@49@F@main@a",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/buffer.c",
+                    "linenum": 5
+                },
+                "type": "int"
+            },
+            "text": "a"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 6,
+            "sem": "BinaryOperator",
+            "text": "="
+        },
+        {
+            "kind": "Literal",
+            "line": 6,
+            "sem": "IntegerLiteral",
+            "text": "7l"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 6,
+            "sem": "BinaryOperator",
+            "text": "/"
+        },
+        {
+            "kind": "Literal",
+            "line": 6,
+            "sem": "IntegerLiteral",
+            "text": "10"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 6,
+            "sem": "CompoundStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Identifier",
+            "line": 7,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:buffer.c@49@F@main@b",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/buffer.c",
+                    "linenum": 5
+                },
+                "type": "int"
+            },
+            "text": "b"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 7,
+            "sem": "BinaryOperator",
+            "text": "="
+        },
+        {
+            "kind": "Literal",
+            "line": 7,
+            "sem": "IntegerLiteral",
+            "text": "71"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 7,
+            "sem": "BinaryOperator",
+            "text": "%"
+        },
+        {
+            "kind": "Literal",
+            "line": 7,
+            "sem": "IntegerLiteral",
+            "text": "10"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 7,
+            "sem": "CompoundStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Identifier",
+            "line": 8,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:buffer.c@49@F@main@c",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/buffer.c",
+                    "linenum": 5
+                },
+                "type": "int"
+            },
+            "text": "c"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 8,
+            "sem": "BinaryOperator",
+            "text": "="
+        },
+        {
+            "kind": "Literal",
+            "line": 8,
+            "sem": "IntegerLiteral",
+            "text": "43"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 8,
+            "sem": "BinaryOperator",
+            "text": "/"
+        },
+        {
+            "kind": "Literal",
+            "line": 8,
+            "sem": "IntegerLiteral",
+            "text": "10"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 8,
+            "sem": "CompoundStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Identifier",
+            "line": 9,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:buffer.c@49@F@main@d",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/buffer.c",
+                    "linenum": 5
+                },
+                "type": "int"
+            },
+            "text": "d"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 9,
+            "sem": "BinaryOperator",
+            "text": "="
+        },
+        {
+            "kind": "Literal",
+            "line": 9,
+            "sem": "IntegerLiteral",
+            "text": "43"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 9,
+            "sem": "BinaryOperator",
+            "text": "%"
+        },
+        {
+            "kind": "Literal",
+            "line": 9,
+            "sem": "IntegerLiteral",
+            "text": "10"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 9,
+            "sem": "CompoundStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Keyword",
+            "line": 10,
+            "sem": "VarDecl",
+            "text": "int"
+        },
+        {
+            "kind": "Identifier",
+            "line": 10,
+            "sem": "VarDecl",
+            "sym": {
+                "id": "c:buffer.c@142@F@main@sum",
+                "kind": "VarDecl",
+                "type": "int"
+            },
+            "text": "sum"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 10,
+            "sem": "VarDecl",
+            "text": "="
+        },
+        {
+            "kind": "Identifier",
+            "line": 10,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:buffer.c@49@F@main@b",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/buffer.c",
+                    "linenum": 5
+                },
+                "type": "int"
+            },
+            "text": "b"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 10,
+            "sem": "BinaryOperator",
+            "text": "+"
+        },
+        {
+            "kind": "Identifier",
+            "line": 10,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:buffer.c@49@F@main@d",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/buffer.c",
+                    "linenum": 5
+                },
+                "type": "int"
+            },
+            "text": "d"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 10,
+            "sem": "BinaryOperator",
+            "text": "+"
+        },
+        {
+            "kind": "Identifier",
+            "line": 10,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:buffer.c@49@F@main@carry",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/buffer.c",
+                    "linenum": 5
+                },
+                "type": "int"
+            },
+            "text": "carry"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 10,
+            "sem": "DeclStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Identifier",
+            "line": 11,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:buffer.c@33@F@main@buffer",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/buffer.c",
+                    "linenum": 4
+                },
+                "type": "int [2]"
+            },
+            "text": "buffer"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 11,
+            "sem": "ArraySubscriptExpr",
+            "text": "["
+        },
+        {
+            "kind": "Identifier",
+            "line": 11,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:buffer.c@49@F@main@cur",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/buffer.c",
+                    "linenum": 5
+                },
+                "type": "int"
+            },
+            "text": "cur"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 11,
+            "sem": "UnaryOperator",
+            "text": "++"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 11,
+            "sem": "ArraySubscriptExpr",
+            "text": "]"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 11,
+            "sem": "BinaryOperator",
+            "text": "="
+        },
+        {
+            "kind": "Identifier",
+            "line": 11,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:buffer.c@142@F@main@sum",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/buffer.c",
+                    "linenum": 10
+                },
+                "type": "int"
+            },
+            "text": "sum"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 11,
+            "sem": "BinaryOperator",
+            "text": "%"
+        },
+        {
+            "kind": "Literal",
+            "line": 11,
+            "sem": "IntegerLiteral",
+            "text": "10"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 11,
+            "sem": "CompoundStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Identifier",
+            "line": 12,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:buffer.c@49@F@main@carry",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/buffer.c",
+                    "linenum": 5
+                },
+                "type": "int"
+            },
+            "text": "carry"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 12,
+            "sem": "BinaryOperator",
+            "text": "="
+        },
+        {
+            "kind": "Identifier",
+            "line": 12,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:buffer.c@142@F@main@sum",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/buffer.c",
+                    "linenum": 10
+                },
+                "type": "int"
+            },
+            "text": "sum"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 12,
+            "sem": "BinaryOperator",
+            "text": "/"
+        },
+        {
+            "kind": "Literal",
+            "line": 12,
+            "sem": "IntegerLiteral",
+            "text": "10"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 12,
+            "sem": "CompoundStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Identifier",
+            "line": 13,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:buffer.c@142@F@main@sum",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/buffer.c",
+                    "linenum": 10
+                },
+                "type": "int"
+            },
+            "text": "sum"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 13,
+            "sem": "BinaryOperator",
+            "text": "="
+        },
+        {
+            "kind": "Identifier",
+            "line": 13,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:buffer.c@49@F@main@a",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/buffer.c",
+                    "linenum": 5
+                },
+                "type": "int"
+            },
+            "text": "a"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 13,
+            "sem": "BinaryOperator",
+            "text": "+"
+        },
+        {
+            "kind": "Identifier",
+            "line": 13,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:buffer.c@49@F@main@c",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/buffer.c",
+                    "linenum": 5
+                },
+                "type": "int"
+            },
+            "text": "c"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 13,
+            "sem": "BinaryOperator",
+            "text": "+"
+        },
+        {
+            "kind": "Identifier",
+            "line": 13,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:buffer.c@49@F@main@carry",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/buffer.c",
+                    "linenum": 5
+                },
+                "type": "int"
+            },
+            "text": "carry"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 13,
+            "sem": "CompoundStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Identifier",
+            "line": 14,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:buffer.c@33@F@main@buffer",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/buffer.c",
+                    "linenum": 4
+                },
+                "type": "int [2]"
+            },
+            "text": "buffer"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 14,
+            "sem": "ArraySubscriptExpr",
+            "text": "["
+        },
+        {
+            "kind": "Identifier",
+            "line": 14,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:buffer.c@49@F@main@cur",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/buffer.c",
+                    "linenum": 5
+                },
+                "type": "int"
+            },
+            "text": "cur"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 14,
+            "sem": "UnaryOperator",
+            "text": "++"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 14,
+            "sem": "ArraySubscriptExpr",
+            "text": "]"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 14,
+            "sem": "BinaryOperator",
+            "text": "="
+        },
+        {
+            "kind": "Identifier",
+            "line": 14,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:buffer.c@142@F@main@sum",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/buffer.c",
+                    "linenum": 10
+                },
+                "type": "int"
+            },
+            "text": "sum"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 14,
+            "sem": "BinaryOperator",
+            "text": "%"
+        },
+        {
+            "kind": "Literal",
+            "line": 14,
+            "sem": "IntegerLiteral",
+            "text": "10"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 14,
+            "sem": "CompoundStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Identifier",
+            "line": 15,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:buffer.c@49@F@main@carry",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/buffer.c",
+                    "linenum": 5
+                },
+                "type": "int"
+            },
+            "text": "carry"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 15,
+            "sem": "BinaryOperator",
+            "text": "="
+        },
+        {
+            "kind": "Identifier",
+            "line": 15,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:buffer.c@142@F@main@sum",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/buffer.c",
+                    "linenum": 10
+                },
+                "type": "int"
+            },
+            "text": "sum"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 15,
+            "sem": "BinaryOperator",
+            "text": "/"
+        },
+        {
+            "kind": "Literal",
+            "line": 15,
+            "sem": "IntegerLiteral",
+            "text": "10"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 15,
+            "sem": "CompoundStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Keyword",
+            "line": 16,
+            "sem": "IfStmt",
+            "text": "if"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 16,
+            "sem": "IfStmt",
+            "text": "("
+        },
+        {
+            "kind": "Identifier",
+            "line": 16,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:buffer.c@49@F@main@carry",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/buffer.c",
+                    "linenum": 5
+                },
+                "type": "int"
+            },
+            "text": "carry"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 16,
+            "sem": "BinaryOperator",
+            "text": ">"
+        },
+        {
+            "kind": "Literal",
+            "line": 16,
+            "sem": "IntegerLiteral",
+            "text": "0"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 16,
+            "sem": "IfStmt",
+            "text": ")"
+        },
+        {
+            "kind": "Identifier",
+            "line": 17,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:buffer.c@33@F@main@buffer",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/buffer.c",
+                    "linenum": 4
+                },
+                "type": "int [2]"
+            },
+            "text": "buffer"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 17,
+            "sem": "ArraySubscriptExpr",
+            "text": "["
+        },
+        {
+            "kind": "Identifier",
+            "line": 17,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:buffer.c@49@F@main@cur",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/buffer.c",
+                    "linenum": 5
+                },
+                "type": "int"
+            },
+            "text": "cur"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 17,
+            "sem": "UnaryOperator",
+            "text": "++"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 17,
+            "sem": "ArraySubscriptExpr",
+            "text": "]"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 17,
+            "sem": "BinaryOperator",
+            "text": "="
+        },
+        {
+            "kind": "Identifier",
+            "line": 17,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:buffer.c@49@F@main@carry",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/buffer.c",
+                    "linenum": 5
+                },
+                "type": "int"
+            },
+            "text": "carry"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 17,
+            "sem": "CompoundStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Keyword",
+            "line": 18,
+            "sem": "ReturnStmt",
+            "text": "return"
+        },
+        {
+            "kind": "Literal",
+            "line": 18,
+            "sem": "IntegerLiteral",
+            "text": "0"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 18,
+            "sem": "CompoundStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 19,
+            "sem": "CompoundStmt",
+            "text": "}"
+        }
+    ]
+}

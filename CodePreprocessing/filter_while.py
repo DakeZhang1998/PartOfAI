@@ -199,82 +199,6 @@ def get_function(tokens):
         # 不属于以上任意一种情况，则正常添加
         body_str += current_token['text'] + ' '
         index += 1
-    #     # 收集函数参数，将其作为函数开始后的变量声明
-    #     if tokens[index]['kind'] == 'Identifier' and tokens[index]['sem'] == "ParmDecl":
-    #         variable_match[tokens[index]['text']] = "entity_" + str(entity_counter)
-    #         entity_counter += 1
-    #         variable_name = tokens[index]['sym']['type'] + variable_match[tokens[index]['text']]
-    #         formals.append(variable_name)      # formals 后面再处理
-    #     elif tokens[index]['sem'] == "ParmDecl":
-    #         index+=1                               # 函数参数中其他部分直接忽略
-    #
-    #     # 形如 int index = foo()形式的，直接将foo()替换为rand()
-    #     elif tokens[index]['kind'] == 'Identifier' and tokens[index-1]['text'] == '=' \
-    #             and tokens[index-2]['kind'] == 'Identifier' and tokens[index]['sem'] == 'DeclRefExpr':
-    #         if 'sym' in tokens[index] and tokens[index]['sym'] != None:
-    #             body_str = body_str + "rand();"
-    #             index+=1
-    #             while tokens[index]['text']!=';':    # 遇到;作为结束标志
-    #                 index+=1
-    #     # 处理形如while(foo()) while(!foo()) if(foo()) if(!foo())形式
-    #     elif tokens[index]['kind'] == 'Identifier' and (tokens[index-1]['text'] == '('or tokens[index-1]['text'] == '!') \
-    #             and (tokens[index-1]['sem'] == 'IfStmt' or tokens[index-1]['sem'] == 'WhileStmt'or tokens[index-1]['sem']=='DeclRefExpr' or tokens[index-1]['sem']=='UnaryOperator'):
-    #             body_str = body_str + "rand()"
-    #             counter = 1
-    #             while counter != 0:       # 防止多个括号的出现 如 foo(foo()) 取最后一个括号
-    #                 index+=1
-    #                 if tokens[index]['text']=='(':
-    #                     counter+=1
-    #                 elif tokens[index]['text']==')':
-    #                     counter-=1
-    #             body_str = body_str + ")"
-    #     # 对于这样foo()独占一行的函数，直接去掉
-    #     elif tokens[index]['kind'] == 'Identifier' and tokens[index]['sem']=='DeclRefExpr' and tokens[index]['line']>tokens[index-1]['line'] :
-    #         if 'sym' in tokens[index] and tokens[index]['sym']!=None and tokens[index]['sym']['kind']=='FunctionDecl':
-    #             if tokens[index-1]['text'] != '(' and tokens[index-1]['text'] != '=':
-    #                 index += 1
-    #                 while tokens[index]['text'] != ';':
-    #                     index += 1
-    #         else:
-    #             if tokens[index]['text'] in variable_match:
-    #                 body_str = body_str + variable_match[tokens[index]['text']] + " "
-    #             else:
-    #                 variable_match[tokens[index]['text']] = "entity_" + str(entity_counter)
-    #                 entity_counter += 1
-    #                 body_str = body_str + variable_match[tokens[index]['text']] + " "
-    #     # 变量命名映射
-    #     elif tokens[index]['kind'] == 'Identifier':
-    #         if tokens[index]['text'] in variable_match:
-    #             body_str = body_str + variable_match[tokens[index]['text']] + " "
-    #         else:
-    #             variable_match[tokens[index]['text']] = "entity_" + str(entity_counter)
-    #             entity_counter += 1
-    #             body_str = body_str + variable_match[tokens[index]['text']] + " "
-    #     # 其他的正常打印输出
-    #     else:
-    #         body_str = body_str + tokens[index]['text'] + " "
-    #     index += 1
-    #
-    # for formal in formals:
-    #     formal_string = ''
-    #     # char[] 和 int[]
-    #     if '[' in formal and ']' in formal:
-    #         if 'char' in formal:
-    #             formal_string = 'char ' + formal[formal.index(']') + 1:] + '[10];'
-    #         elif 'int' in formal:
-    #             formal_string = 'int ' + formal[formal.index(']') + 1:] + '[10];'
-    #     elif '*' in formal:
-    #         if 'char' in formal:
-    #             formal_string = 'char ' + formal[formal.index('entity'):] + '[10];'
-    #         elif 'int' in formal:
-    #             formal_string = 'int ' + formal[formal.index('entity'):] + '[10];'
-    #     # char 与 int类型
-    #     else:
-    #         if 'char' in formal:
-    #             formal_string = 'char ' + formal[formal.index('entity'):] + '=\'a\';'
-    #         elif 'int' in formal:
-    #             formal_string = 'int ' + formal[formal.index('entity'):] + '=rand();'
-    #     head_str = head_str + formal_string + '\n'
 
     return head_str + body_str
 
@@ -375,14 +299,14 @@ def params_exe(params):
 
 
 if __name__ == '__main__':
-    file_name = 'while'
+    file_name = 'buffer'
     file = open('test/' + file_name + '.json', errors='ignore')
     file_content = json.loads(file.read())
 
     result = get_functions(file_content)
     for function in result:
         function = function[0:len(function)-1]
-        function += 'return 0 \n }'
+        function += 'return 0; \n }'
         f = open('test/' + file_name + '_' + str(uuid.uuid1()) + '.c', errors='ignore', mode='w')
         # f = open(str(uuid.uuid1())+'.c', errors='ignore', mode='w')
         f.write(function)

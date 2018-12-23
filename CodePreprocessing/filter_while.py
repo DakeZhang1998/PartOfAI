@@ -11,6 +11,8 @@ entity_counter = 1                     # 计数，用来替换变量名
 def get_functions(file_content):
     functions = []                           # 存储返回的字符串数组
     tokens = file_content['tokens']          # 存储所有读取的token
+    global variable_match
+    global entity_counter
 
     # 当读到'FunctionDecl'类型的token时，开始加入元素，同时记录'{'和'}'的匹配情况，
     # 如果完全匹配，则调用get_function函数得到一个字符串结果
@@ -247,18 +249,19 @@ def params_exe(params):
                 elif current_token['kind'] == 'Identifier':
                     result += current_token['text'] + ' '
                     index += 1
-                    current_token = params[index]
-                    if current_token['text'] == '[':
-                        index += 1
+                    if index < len(params):
                         current_token = params[index]
-                        if current_token['text'] == ']':
+                        if current_token['text'] == '[':
                             index += 1
-                            result += '[ rand() ] ;\n'
-                            continue
-                        elif current_token['sem'] == 'IntegerLiteral':
-                            result += ' [' + current_token['text'] + ' ] ;\n'
-                            index += 2
-                            continue
+                            current_token = params[index]
+                            if current_token['text'] == ']':
+                                index += 1
+                                result += '[ rand() ] ;\n'
+                                continue
+                            elif current_token['sem'] == 'IntegerLiteral':
+                                result += ' [' + current_token['text'] + ' ] ;\n'
+                                index += 2
+                                continue
                     else:
                         result += '= rand() ;\n'
                         continue
@@ -299,7 +302,7 @@ def params_exe(params):
 
 
 if __name__ == '__main__':
-    file_name = 'buffer'
+    file_name = 'condvarwait'
     file = open('test/' + file_name + '.json', errors='ignore')
     file_content = json.loads(file.read())
 

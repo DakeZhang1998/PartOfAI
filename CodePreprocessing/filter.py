@@ -156,7 +156,7 @@ def get_function(tokens):
 
 
 if __name__ == '__main__':
-    file = open('while.json', errors='ignore')
+    file = open('test/while.json', errors='ignore')
     file_content = json.loads(file.read())
 
     result = get_functions(file_content)

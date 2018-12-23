@@ -88,9 +88,31 @@ def get_function(tokens):
             print('hello!')
 
         # 进行换行
-        if tokens[index]['line'] > line_num:
+        if current_token['line'] > line_num:
             line_num = tokens[index]['line']
             body_str += '\n'
+
+        # 先处理函数头，即'void foo(int i, int arr[])'
+        if current_token['kind'] == 'Keyword' and current_token['sem'] == 'FunctionDecl':
+            index2 = index + 1
+            head_str += 'int main() {\n'
+            # 一口气读到'('
+            while index2 < len(tokens):
+                if tokens[index2]['text'] == '(':
+                    break
+                index2 += 1
+            # 在一口气读到')'
+            params = []
+            index2 += 1
+            while index2 < len(tokens):
+                current_token = tokens[index2]
+                if current_token['text'] == ')':
+                    break
+                params.append(current_token)
+                index2 += 1
+            index = index2 + 2
+            head_str += params_exe(params)
+            continue
 
         # 保留reserved_functions中的函数调用，一直读到最后一个';'，执行完之后直接跳到下一次循环
         if current_token['text'] in reserved_functions and current_token['kind'] == 'Identifier':
@@ -99,102 +121,166 @@ def get_function(tokens):
                 current_token = tokens[index2]
                 # 参数变量名转换
                 if current_token['kind'] == 'Identifier' and index2 > index:
-                    body_str += viarable_id(current_token['text']) + ' '
+                    body_str += variable_id(current_token['text']) + ' '
                 else:
-                    body_str = body_str + current_token['text'] + ' '
+                    body_str += current_token['text'] + ' '
                 index2 += 1
                 # 满足情况跳出循环
                 if current_token['text'] == ';':
                     break
-            index = index2 + 1
+            index = index2
             continue
 
         # 类似于'pthread_setcancelstate(PTHREAD_CANCEL_ENABLE, NULL);'单纯的函数调用，直接干掉
-        # 由于上一步已经保留了
-
-
-        # 收集函数参数，将其作为函数开始后的变量声明
-        if tokens[index]['kind'] == 'Identifier' and tokens[index]['sem'] == "ParmDecl":
-            variable_match[tokens[index]['text']] = "entity_" + str(entity_counter)
-            entity_counter += 1
-            variable_name = tokens[index]['sym']['type'] + variable_match[tokens[index]['text']]
-            formals.append(variable_name)      # formals 后面再处理
-        elif tokens[index]['sem'] == "ParmDecl":
-            index+=1                               # 函数参数中其他部分直接忽略
-
-        # 形如 int index = foo()形式的，直接将foo()替换为rand()
-        elif tokens[index]['kind'] == 'Identifier' and tokens[index-1]['text'] == '=' \
-                and tokens[index-2]['kind'] == 'Identifier' and tokens[index]['sem'] == 'DeclRefExpr':
-            if 'sym' in tokens[index] and tokens[index]['sym'] != None:
-                body_str = body_str + "rand();"
-                index+=1
-                while tokens[index]['text']!=';':    # 遇到;作为结束标志
-                    index+=1
-        # 处理形如while(foo()) while(!foo()) if(foo()) if(!foo())形式
-        elif tokens[index]['kind'] == 'Identifier' and (tokens[index-1]['text'] == '('or tokens[index-1]['text'] == '!') \
-                and (tokens[index-1]['sem'] == 'IfStmt' or tokens[index-1]['sem'] == 'WhileStmt'or tokens[index-1]['sem']=='DeclRefExpr' or tokens[index-1]['sem']=='UnaryOperator'):
-                body_str = body_str + "rand()"
-                counter = 1
-                while counter != 0:       # 防止多个括号的出现 如 foo(foo()) 取最后一个括号
-                    index+=1
-                    if tokens[index]['text']=='(':
-                        counter+=1
-                    elif tokens[index]['text']==')':
-                        counter-=1
-                body_str = body_str + ")"
-        # 对于这样foo()独占一行的函数，直接去掉
-        elif tokens[index]['kind'] == 'Identifier' and tokens[index]['sem']=='DeclRefExpr' and tokens[index]['line']>tokens[index-1]['line'] :
-            if 'sym' in tokens[index] and tokens[index]['sym']!=None and tokens[index]['sym']['kind']=='FunctionDecl':
-                if tokens[index-1]['text'] != '(' and tokens[index-1]['text'] != '=':
-                    index += 1
-                    while tokens[index]['text'] != ';':
-                        index += 1
+        # 由于上一步已经保留了需要保留的函数调用，所以不需要再进行判断
+        # 如果是赋值运算，例如'i = foo();'，则替换为rand()，同理'if(foo())'的情况
+        # 判断前一个token是否为'}'或者';'
+        if current_token['kind'] == 'Identifier' and tokens[index + 1]['text'] == '(' and index > 1:
+            if tokens[index - 1]['text'] == '}' or tokens[index - 1]['text'] == ';' or tokens[index - 1]['text'] == '{'\
+                    or tokens[index - 1]['text'] == ')':
+                index2 = index
+                # 直接去掉
+                while index2 < len(tokens):
+                    current_token = tokens[index2]
+                    if current_token['text'] == ';':
+                        break
+                    index2 += 1
+                index = index2 + 1
+                continue
             else:
-                if tokens[index]['text'] in variable_match:
-                    body_str = body_str + variable_match[tokens[index]['text']] + " "
-                else:
-                    variable_match[tokens[index]['text']] = "entity_" + str(entity_counter)
-                    entity_counter += 1
-                    body_str = body_str + variable_match[tokens[index]['text']] + " "
-        # 变量命名映射
-        elif tokens[index]['kind'] == 'Identifier':
-            if tokens[index]['text'] in variable_match:
-                body_str = body_str + variable_match[tokens[index]['text']] + " "
+                # 换成rand()
+                index2 = index
+                left_bracket_num = 0
+                right_bracket_num = 0
+                while index2 < len(tokens):
+                    current_token = tokens[index2]
+                    # 读到左右括号匹配即可跳出循环
+                    if current_token['text'] == '(':
+                        left_bracket_num += 1
+                    elif current_token['text'] == ')':
+                        right_bracket_num += 1
+                    if left_bracket_num == right_bracket_num and left_bracket_num != 0:
+                        break
+                    index2 += 1
+                if tokens[index2]['text'] == ';':
+                    body_str += '; '
+                index = index2 + 1
+                body_str += 'rand() '
+                continue
+
+        # 遇到return语句，直接删除
+        if current_token['text'] == 'return':
+            index2 = index
+            while index2 < len(tokens):
+                current_token = tokens[index2]
+                index2 += 1
+                if current_token['text'] == ';':
+                    break
+            index = index2
+            continue
+
+        # 不接受double/float/long/short/void类型，全部改成int，注意，此处未处理long double，接受unsigned int
+        except_keywords = ['double', 'float', 'long', 'short', 'void']
+        if current_token['kind'] == 'Keyword' and current_token['text'] in except_keywords:
+            body_str += 'int '
+            index += 1
+            continue
+
+        # 如果当前是token的kind是'Identifier'，则调用函数，返回'var_i'，放在最后处理
+        if current_token['kind'] == 'Identifier':
+            # 如果是NULL的话，直接添加
+            if current_token['text'] == 'NULL':
+                body_str += 'NULL '
             else:
-                variable_match[tokens[index]['text']] = "entity_" + str(entity_counter)
-                entity_counter += 1
-                body_str = body_str + variable_match[tokens[index]['text']] + " "
-        # 其他的正常打印输出
-        else:
-            body_str = body_str + tokens[index]['text'] + " "
+                body_str += variable_id(current_token['text']) + ' '
+            index += 1
+            continue
+
+        # 不属于以上任意一种情况，则正常添加
+        body_str += current_token['text'] + ' '
         index += 1
-
-    for formal in formals:
-        formal_string = ''
-        # char[] 和 int[]
-        if '[' in formal and ']' in formal:
-            if 'char' in formal:
-                formal_string = 'char ' + formal[formal.index(']') + 1:] + '[10];'
-            elif 'int' in formal:
-                formal_string = 'int ' + formal[formal.index(']') + 1:] + '[10];'
-        elif '*' in formal:
-            if 'char' in formal:
-                formal_string = 'char ' + formal[formal.index('entity'):] + '[10];'
-            elif 'int' in formal:
-                formal_string = 'int ' + formal[formal.index('entity'):] + '[10];'
-        # char 与 int类型
-        else:
-            if 'char' in formal:
-                formal_string = 'char ' + formal[formal.index('entity'):] + '=\'a\';'
-            elif 'int' in formal:
-                formal_string = 'int ' + formal[formal.index('entity'):] + '=rand();'
-        head_str = head_str + formal_string + '\n'
+    #     # 收集函数参数，将其作为函数开始后的变量声明
+    #     if tokens[index]['kind'] == 'Identifier' and tokens[index]['sem'] == "ParmDecl":
+    #         variable_match[tokens[index]['text']] = "entity_" + str(entity_counter)
+    #         entity_counter += 1
+    #         variable_name = tokens[index]['sym']['type'] + variable_match[tokens[index]['text']]
+    #         formals.append(variable_name)      # formals 后面再处理
+    #     elif tokens[index]['sem'] == "ParmDecl":
+    #         index+=1                               # 函数参数中其他部分直接忽略
+    #
+    #     # 形如 int index = foo()形式的，直接将foo()替换为rand()
+    #     elif tokens[index]['kind'] == 'Identifier' and tokens[index-1]['text'] == '=' \
+    #             and tokens[index-2]['kind'] == 'Identifier' and tokens[index]['sem'] == 'DeclRefExpr':
+    #         if 'sym' in tokens[index] and tokens[index]['sym'] != None:
+    #             body_str = body_str + "rand();"
+    #             index+=1
+    #             while tokens[index]['text']!=';':    # 遇到;作为结束标志
+    #                 index+=1
+    #     # 处理形如while(foo()) while(!foo()) if(foo()) if(!foo())形式
+    #     elif tokens[index]['kind'] == 'Identifier' and (tokens[index-1]['text'] == '('or tokens[index-1]['text'] == '!') \
+    #             and (tokens[index-1]['sem'] == 'IfStmt' or tokens[index-1]['sem'] == 'WhileStmt'or tokens[index-1]['sem']=='DeclRefExpr' or tokens[index-1]['sem']=='UnaryOperator'):
+    #             body_str = body_str + "rand()"
+    #             counter = 1
+    #             while counter != 0:       # 防止多个括号的出现 如 foo(foo()) 取最后一个括号
+    #                 index+=1
+    #                 if tokens[index]['text']=='(':
+    #                     counter+=1
+    #                 elif tokens[index]['text']==')':
+    #                     counter-=1
+    #             body_str = body_str + ")"
+    #     # 对于这样foo()独占一行的函数，直接去掉
+    #     elif tokens[index]['kind'] == 'Identifier' and tokens[index]['sem']=='DeclRefExpr' and tokens[index]['line']>tokens[index-1]['line'] :
+    #         if 'sym' in tokens[index] and tokens[index]['sym']!=None and tokens[index]['sym']['kind']=='FunctionDecl':
+    #             if tokens[index-1]['text'] != '(' and tokens[index-1]['text'] != '=':
+    #                 index += 1
+    #                 while tokens[index]['text'] != ';':
+    #                     index += 1
+    #         else:
+    #             if tokens[index]['text'] in variable_match:
+    #                 body_str = body_str + variable_match[tokens[index]['text']] + " "
+    #             else:
+    #                 variable_match[tokens[index]['text']] = "entity_" + str(entity_counter)
+    #                 entity_counter += 1
+    #                 body_str = body_str + variable_match[tokens[index]['text']] + " "
+    #     # 变量命名映射
+    #     elif tokens[index]['kind'] == 'Identifier':
+    #         if tokens[index]['text'] in variable_match:
+    #             body_str = body_str + variable_match[tokens[index]['text']] + " "
+    #         else:
+    #             variable_match[tokens[index]['text']] = "entity_" + str(entity_counter)
+    #             entity_counter += 1
+    #             body_str = body_str + variable_match[tokens[index]['text']] + " "
+    #     # 其他的正常打印输出
+    #     else:
+    #         body_str = body_str + tokens[index]['text'] + " "
+    #     index += 1
+    #
+    # for formal in formals:
+    #     formal_string = ''
+    #     # char[] 和 int[]
+    #     if '[' in formal and ']' in formal:
+    #         if 'char' in formal:
+    #             formal_string = 'char ' + formal[formal.index(']') + 1:] + '[10];'
+    #         elif 'int' in formal:
+    #             formal_string = 'int ' + formal[formal.index(']') + 1:] + '[10];'
+    #     elif '*' in formal:
+    #         if 'char' in formal:
+    #             formal_string = 'char ' + formal[formal.index('entity'):] + '[10];'
+    #         elif 'int' in formal:
+    #             formal_string = 'int ' + formal[formal.index('entity'):] + '[10];'
+    #     # char 与 int类型
+    #     else:
+    #         if 'char' in formal:
+    #             formal_string = 'char ' + formal[formal.index('entity'):] + '=\'a\';'
+    #         elif 'int' in formal:
+    #             formal_string = 'int ' + formal[formal.index('entity'):] + '=rand();'
+    #     head_str = head_str + formal_string + '\n'
 
     return head_str + body_str
 
 
 # 用于处理所有的变量名，参数为当前的token的'text'属性，返回变量的新名，格式为'var_1'
-def viarable_id(token_text):
+def variable_id(token_text):
     global variable_match         # 全局变量，字典，键是变量原名，值为变量的新名(e.g. var_1)
     global entity_counter         # 全局变量，计数，用来替换变量名
 
@@ -206,15 +292,99 @@ def viarable_id(token_text):
     return variable_match[token_text]
 
 
+# 用于处理函数声明中的形参，由于形参的值未知，所以值都赋为rand()，输入为参数列表，输出为对应的变量声明和赋值
+def params_exe(params):
+    result = ''
+    index = 0
+
+    while index < len(params):
+        current_token = params[index]
+        if current_token['text'] == ',':
+            index += 1
+            continue
+
+        # 开始正常处理函数
+        if current_token['kind'] == 'Keyword':
+            # 处理的类型，'int i'/'int * i'/'int i[]'
+            if current_token['text'] == 'int' or current_token['text'] == 'char':
+                result += current_token['text'] + ' '
+                index += 1
+                current_token = params[index]
+                # 处理'int *i'
+                if current_token['text'] == '*':
+                    result += '* '
+                    index += 1
+                    current_token = params[index]
+                    if current_token['kind'] == 'Identifier':
+                        result += variable_id(current_token['text']) + ' = rand() ;\n'
+                        index += 1
+                        continue
+                # 处理'ind i'/'int i[]'
+                elif current_token['kind'] == 'Identifier':
+                    result += current_token['text'] + ' '
+                    index += 1
+                    current_token = params[index]
+                    if current_token['text'] == '[':
+                        index += 1
+                        current_token = params[index]
+                        if current_token['text'] == ']':
+                            index += 1
+                            result += '[ rand() ] ;\n'
+                            continue
+                        elif current_token['sem'] == 'IntegerLiteral':
+                            result += ' [' + current_token['text'] + ' ] ;\n'
+                            index += 2
+                            continue
+                    else:
+                        result += '= rand() ;\n'
+                        continue
+            else:
+                result += 'int '
+                index += 1
+                current_token = params[index]
+                # 处理'double *i'
+                if current_token['text'] == '*':
+                    result += '* '
+                    index += 1
+                    current_token = params[index]
+                    if current_token['kind'] == 'Identifier':
+                        result += variable_id(current_token['text']) + ' = rand() ;\n'
+                        index += 1
+                        continue
+                # 处理'double i'/'double i[]'
+                elif current_token['kind'] == 'Identifier':
+                    result += current_token['text'] + ' '
+                    index += 1
+                    current_token = params[index]
+                    if current_token['text'] == '[':
+                        index += 1
+                        current_token = params[index]
+                        if current_token['text'] == ']':
+                            index += 1
+                            result += '[ rand() ] ;\n'
+                            continue
+                        elif current_token['sem'] == 'IntegerLiteral':
+                            result += ' [' + current_token['text'] + ' ] ;\n'
+                            index += 2
+                            continue
+                    else:
+                        result += '= rand() ;\n'
+                        continue
+        index += 1
+    return result
+
+
 if __name__ == '__main__':
-    file = open('test/while.json', errors='ignore')
+    file_name = 'while'
+    file = open('test/' + file_name + '.json', errors='ignore')
     file_content = json.loads(file.read())
 
     result = get_functions(file_content)
     for function in result:
-        function = "int main(){\n"+function
-        function = function + "\n}"
-        f = open(str(uuid.uuid1())+'.c', errors='ignore', mode='w')
+        function = function[0:len(function)-1]
+        function += 'return 0 \n }'
+        f = open('test/' + file_name + '_' + str(uuid.uuid1()) + '.c', errors='ignore', mode='w')
+        # f = open(str(uuid.uuid1())+'.c', errors='ignore', mode='w')
         f.write(function)
         # print(function)
         # print('-----------------------------')

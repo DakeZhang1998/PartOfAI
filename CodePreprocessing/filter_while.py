@@ -9,15 +9,66 @@ entity_counter = 1                     # 计数，用来替换变量名
 
 # 传入解码后的json文件，返回一个字符串数组，其中的每一个元素都是一个function
 def get_functions(file_content):
-    functions = []                           # 存储返回的字符串数组
-    tokens = file_content['tokens']          # 存储所有读取的token
-    global variable_match
-    global entity_counter
+    functions = []                                      # 存储返回的字符串数组
+    tokens = file_content['tokens']                     # 存储所有读取的token
+    str_function_head = '#include <stdlib.h>\n#include <string.h>\n'          # 保存 #include<stdlib.h> 和 struct 信息
 
     # 当读到'FunctionDecl'类型的token时，开始加入元素，同时记录'{'和'}'的匹配情况，
     # 如果完全匹配，则调用get_function函数得到一个字符串结果
     index = 0
     while index < len(tokens):
+        # 保存所有的struct
+        index2 = index
+        current_token = tokens[index2]
+        if current_token['sem'] == 'StructDecl' and current_token['text'] == 'struct':
+            line_num_temp = current_token['line']
+            left_brace_num = 0
+            right_brace_num = 0
+            while index2 < len(tokens):
+                current_token = tokens[index2]
+                if current_token['kind'] == 'Identifier':
+                    str_function_head += variable_id(current_token['text']) + ' '
+                else:
+                    str_function_head += current_token['text'] + ' '
+                if line_num_temp < current_token['line']:
+                    str_function_head += '\n'
+                if current_token['text'] == '{':
+                    left_brace_num += 1
+                elif current_token['text'] == '}':
+                    right_brace_num += 1
+                    if left_brace_num == right_brace_num and left_brace_num != 0:
+                        str_function_head += ';\n'
+                        break
+                index2 += 1
+            index = index2 + 1
+            continue
+
+        if current_token['sem'] == 'StructDecl' and current_token['kind'] == 'Identifier':
+            str_function_head += 'typedef struct '
+            line_num_temp = current_token['line']
+            left_brace_num = 0
+            right_brace_num = 0
+            while index2 < len(tokens):
+                current_token = tokens[index2]
+                if current_token['kind'] == 'Identifier':
+                    str_function_head += variable_id(current_token['text']) + ' '
+                else:
+                    str_function_head += current_token['text'] + ' '
+                if line_num_temp < current_token['line']:
+                    str_function_head += '\n'
+                if current_token['text'] == '{':
+                    left_brace_num += 1
+                elif current_token['text'] == '}':
+                    right_brace_num += 1
+                    if left_brace_num == right_brace_num and left_brace_num != 0:
+                        break
+                index2 += 1
+            index = index2 + 1
+            current_token = tokens[index]
+            if current_token['kind'] == 'Identifier':
+                str_function_head += variable_id(current_token['text']) + ';\n'
+            continue
+
         # 当读到'FunctionDecl'类型的token时，开始加入元素
         if tokens[index]['sem'] == 'FunctionDecl':
             temp_tokens = []
@@ -46,15 +97,18 @@ def get_functions(file_content):
                     left_brace_num += 1
                 elif current_token['text'] == '}':
                     right_brace_num += 1
-                    if left_brace_num == right_brace_num:
+                    if left_brace_num == right_brace_num and left_brace_num != 0:
                         break
                 temp_tokens.append(current_token)
                 index2 += 1
 
             # 将得到的分割好的token序列
-            functions.append(get_function(temp_tokens))
+            temp_str = 'int pthread_mutex_lock(struct pthread_mutex_t* mutex_t){ return 0; } \n' \
+                       'int pthread_mutex_unlock(struct pthread_mutex_t* mutex_t){ return 0; } \n' \
+                       'void pthread_cond_wait(struct pthread_cond_t* cond_t, struct pthread_mutex_t* mutex_t); \n' \
+                       'void pthread_cond_signal(struct pthread_cond_t* cond_t);\n'
+            functions.append(str_function_head + temp_str + get_function(temp_tokens))
             index = index2 + 1
-            print(temp_tokens)
         else:
             index += 1
 
@@ -72,11 +126,10 @@ def get_function(tokens):
 
     line_num = tokens[0]['line']    # 记录当前的行号，用来进行换行操作
     formals = []
-    variable_match = {}             # 全局变量，
     index = 0                       # 扫描时，当前的位置
-    entity_counter = 1  # 全局变量，
     reserved_functions = ['pthread_cond_wait', 'pthread_cond_signal',
-                          'pthread_mutex_lock', 'pthread_mutex_unlock']
+                          'pthread_mutex_lock', 'pthread_mutex_unlock',
+                          'strcpy', 'strncpy', 'free']
 
     # 开始扫描tokens
     while index < len(tokens):
@@ -137,7 +190,9 @@ def get_function(tokens):
         # 由于上一步已经保留了需要保留的函数调用，所以不需要再进行判断
         # 如果是赋值运算，例如'i = foo();'，则替换为rand()，同理'if(foo())'的情况
         # 判断前一个token是否为'}'或者';'
-        if current_token['kind'] == 'Identifier' and tokens[index + 1]['text'] == '(' and index > 1:
+        not_functions = ['malloc']
+        if current_token['kind'] == 'Identifier' and tokens[index + 1]['text'] == '(' and index > 1\
+                and current_token['text'] not in not_functions:
             if tokens[index - 1]['text'] == '}' or tokens[index - 1]['text'] == ';' or tokens[index - 1]['text'] == '{'\
                     or tokens[index - 1]['text'] == ')':
                 index2 = index
@@ -181,18 +236,20 @@ def get_function(tokens):
             index = index2
             continue
 
-        # 不接受double/float/long/short/void类型，全部改成int，注意，此处未处理long double，接受unsigned int
-        except_keywords = ['double', 'float', 'long', 'short', 'void']
+        # 不接受double/float/short/void类型，全部改成int，注意，此处未处理long double，接受unsigned int
+        except_keywords = ['double', 'float', 'short', 'void']
         if current_token['kind'] == 'Keyword' and current_token['text'] in except_keywords:
             body_str += 'int '
             index += 1
             continue
 
         # 如果当前是token的kind是'Identifier'，则调用函数，返回'var_i'，放在最后处理
-        if current_token['kind'] == 'Identifier':
+        if current_token['kind'] == 'Identifier' and current_token['text']:
             # 如果是NULL的话，直接添加
             if current_token['text'] == 'NULL':
                 body_str += 'NULL '
+            elif current_token['text'] in not_functions:
+                body_str += current_token['text']
             else:
                 body_str += variable_id(current_token['text']) + ' '
             index += 1
@@ -238,16 +295,15 @@ def params_exe(params):
                 current_token = params[index]
                 # 处理'int *i'
                 if current_token['text'] == '*':
-                    result += '* '
                     index += 1
                     current_token = params[index]
                     if current_token['kind'] == 'Identifier':
-                        result += variable_id(current_token['text']) + ' = rand() ;\n'
+                        result += variable_id(current_token['text']) + ' [10] ;\n'
                         index += 1
                         continue
                 # 处理'ind i'/'int i[]'
                 elif current_token['kind'] == 'Identifier':
-                    result += current_token['text'] + ' '
+                    result += variable_id(current_token['text']) + ' '
                     index += 1
                     if index < len(params):
                         current_token = params[index]
@@ -256,12 +312,13 @@ def params_exe(params):
                             current_token = params[index]
                             if current_token['text'] == ']':
                                 index += 1
-                                result += '[ rand() ] ;\n'
+                                result += '[ 10 ] ;\n'
                                 continue
                             elif current_token['sem'] == 'IntegerLiteral':
                                 result += ' [' + current_token['text'] + ' ] ;\n'
                                 index += 2
                                 continue
+                        result += '= rand() ;\n'
                     else:
                         result += '= rand() ;\n'
                         continue
@@ -271,16 +328,15 @@ def params_exe(params):
                 current_token = params[index]
                 # 处理'double *i'
                 if current_token['text'] == '*':
-                    result += '* '
                     index += 1
                     current_token = params[index]
                     if current_token['kind'] == 'Identifier':
-                        result += variable_id(current_token['text']) + ' = rand() ;\n'
+                        result += variable_id(current_token['text']) + ' [10] ;\n'
                         index += 1
                         continue
                 # 处理'double i'/'double i[]'
                 elif current_token['kind'] == 'Identifier':
-                    result += current_token['text'] + ' '
+                    result += variable_id(current_token['text']) + ' '
                     index += 1
                     current_token = params[index]
                     if current_token['text'] == '[':
@@ -294,6 +350,7 @@ def params_exe(params):
                             result += ' [' + current_token['text'] + ' ] ;\n'
                             index += 2
                             continue
+                        result += '= rand() ;\n'
                     else:
                         result += '= rand() ;\n'
                         continue
@@ -302,17 +359,18 @@ def params_exe(params):
 
 
 if __name__ == '__main__':
-    file_name = 'condvarwait'
-    file = open('test/' + file_name + '.json', errors='ignore')
+    file_name = 'malloc-2'
+    file = open('changeCode/' + file_name + '.json', errors='ignore')
     file_content = json.loads(file.read())
 
     result = get_functions(file_content)
-    for function in result:
-        function = function[0:len(function)-1]
-        function += 'return 0; \n }'
-        f = open('test/' + file_name + '_' + str(uuid.uuid1()) + '.c', errors='ignore', mode='w')
-        # f = open(str(uuid.uuid1())+'.c', errors='ignore', mode='w')
-        f.write(function)
-        # print(function)
-        # print('-----------------------------')
+    # for function in result:
+    function = result[len(result) - 1]
+    function = function[0:len(function)-1]
+    function += 'return 0; \n }'
+    f = open('changeCode/' + file_name + '_' + str(uuid.uuid1()) + '.c', errors='ignore', mode='w')
+    # f = open(str(uuid.uuid1())+'.c', errors='ignore', mode='w')
+    f.write(function)
+    # print(function)
+    # print('-----------------------------')
 

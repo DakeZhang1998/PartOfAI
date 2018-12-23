@@ -1,0 +1,937 @@
+{
+    "filename": "/sa-bAbI/tokenizer/bin/malloc.c",
+    "tokens": [
+        {
+            "kind": "Keyword",
+            "line": 3,
+            "sem": "StructDecl",
+            "text": "struct"
+        },
+        {
+            "kind": "Identifier",
+            "line": 3,
+            "sem": "StructDecl",
+            "sym": {
+                "id": "c:@S@pthread_mutex_t",
+                "kind": "StructDecl",
+                "type": "struct pthread_mutex_t"
+            },
+            "text": "pthread_mutex_t"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 3,
+            "sem": "StructDecl",
+            "text": "{"
+        },
+        {
+            "kind": "Keyword",
+            "line": 3,
+            "sem": "FieldDecl",
+            "text": "int"
+        },
+        {
+            "kind": "Identifier",
+            "line": 3,
+            "sem": "FieldDecl",
+            "sym": {
+                "id": "c:@S@pthread_mutex_t@FI@i",
+                "kind": "FieldDecl",
+                "type": "int"
+            },
+            "text": "i"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 3,
+            "sem": "StructDecl",
+            "text": ";"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 3,
+            "sem": "StructDecl",
+            "text": "}"
+        },
+        {
+            "kind": "Keyword",
+            "line": 4,
+            "sem": "StructDecl",
+            "text": "struct"
+        },
+        {
+            "kind": "Identifier",
+            "line": 4,
+            "sem": "StructDecl",
+            "sym": {
+                "id": "c:@S@pthread_cond_t",
+                "kind": "StructDecl",
+                "type": "struct pthread_cond_t"
+            },
+            "text": "pthread_cond_t"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 4,
+            "sem": "StructDecl",
+            "text": "{"
+        },
+        {
+            "kind": "Keyword",
+            "line": 4,
+            "sem": "FieldDecl",
+            "text": "int"
+        },
+        {
+            "kind": "Identifier",
+            "line": 4,
+            "sem": "FieldDecl",
+            "sym": {
+                "id": "c:@S@pthread_cond_t@FI@i",
+                "kind": "FieldDecl",
+                "type": "int"
+            },
+            "text": "i"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 4,
+            "sem": "StructDecl",
+            "text": ";"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 4,
+            "sem": "StructDecl",
+            "text": "}"
+        },
+        {
+            "kind": "Keyword",
+            "line": 5,
+            "sem": "FunctionDecl",
+            "text": "int"
+        },
+        {
+            "kind": "Identifier",
+            "line": 5,
+            "sem": "FunctionDecl",
+            "sym": {
+                "id": "c:@F@pthread_mutex_lock",
+                "kind": "FunctionDecl",
+                "type": "int (struct pthread_mutex_t *)"
+            },
+            "text": "pthread_mutex_lock"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 5,
+            "sem": "FunctionDecl",
+            "text": "("
+        },
+        {
+            "kind": "Keyword",
+            "line": 5,
+            "sem": "ParmDecl",
+            "text": "struct"
+        },
+        {
+            "kind": "Identifier",
+            "line": 5,
+            "sem": "TypeRef",
+            "sym": {
+                "type": "struct pthread_mutex_t"
+            },
+            "text": "pthread_mutex_t"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 5,
+            "sem": "ParmDecl",
+            "text": "*"
+        },
+        {
+            "kind": "Identifier",
+            "line": 5,
+            "sem": "ParmDecl",
+            "sym": {
+                "id": "c:malloc.c@130@F@pthread_mutex_lock@mutex_t",
+                "kind": "ParmDecl",
+                "type": "struct pthread_mutex_t *"
+            },
+            "text": "mutex_t"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 5,
+            "sem": "FunctionDecl",
+            "text": ")"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 5,
+            "sem": "CompoundStmt",
+            "text": "{"
+        },
+        {
+            "kind": "Keyword",
+            "line": 5,
+            "sem": "ReturnStmt",
+            "text": "return"
+        },
+        {
+            "kind": "Literal",
+            "line": 5,
+            "sem": "IntegerLiteral",
+            "text": "0"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 5,
+            "sem": "CompoundStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 5,
+            "sem": "CompoundStmt",
+            "text": "}"
+        },
+        {
+            "kind": "Keyword",
+            "line": 6,
+            "sem": "FunctionDecl",
+            "text": "int"
+        },
+        {
+            "kind": "Identifier",
+            "line": 6,
+            "sem": "FunctionDecl",
+            "sym": {
+                "id": "c:@F@pthread_mutex_unlock",
+                "kind": "FunctionDecl",
+                "type": "int (struct pthread_mutex_t *)"
+            },
+            "text": "pthread_mutex_unlock"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 6,
+            "sem": "FunctionDecl",
+            "text": "("
+        },
+        {
+            "kind": "Keyword",
+            "line": 6,
+            "sem": "ParmDecl",
+            "text": "struct"
+        },
+        {
+            "kind": "Identifier",
+            "line": 6,
+            "sem": "TypeRef",
+            "sym": {
+                "type": "struct pthread_mutex_t"
+            },
+            "text": "pthread_mutex_t"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 6,
+            "sem": "ParmDecl",
+            "text": "*"
+        },
+        {
+            "kind": "Identifier",
+            "line": 6,
+            "sem": "ParmDecl",
+            "sym": {
+                "id": "c:malloc.c@201@F@pthread_mutex_unlock@mutex_t",
+                "kind": "ParmDecl",
+                "type": "struct pthread_mutex_t *"
+            },
+            "text": "mutex_t"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 6,
+            "sem": "FunctionDecl",
+            "text": ")"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 6,
+            "sem": "CompoundStmt",
+            "text": "{"
+        },
+        {
+            "kind": "Keyword",
+            "line": 6,
+            "sem": "ReturnStmt",
+            "text": "return"
+        },
+        {
+            "kind": "Literal",
+            "line": 6,
+            "sem": "IntegerLiteral",
+            "text": "0"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 6,
+            "sem": "CompoundStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 6,
+            "sem": "CompoundStmt",
+            "text": "}"
+        },
+        {
+            "kind": "Keyword",
+            "line": 7,
+            "sem": "FunctionDecl",
+            "text": "void"
+        },
+        {
+            "kind": "Identifier",
+            "line": 7,
+            "sem": "FunctionDecl",
+            "sym": {
+                "id": "c:@F@pthread_cond_wait",
+                "kind": "FunctionDecl",
+                "type": "void (struct pthread_cond_t *, struct pthread_mutex_t *)"
+            },
+            "text": "pthread_cond_wait"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 7,
+            "sem": "FunctionDecl",
+            "text": "("
+        },
+        {
+            "kind": "Keyword",
+            "line": 7,
+            "sem": "ParmDecl",
+            "text": "struct"
+        },
+        {
+            "kind": "Identifier",
+            "line": 7,
+            "sem": "TypeRef",
+            "sym": {
+                "type": "struct pthread_cond_t"
+            },
+            "text": "pthread_cond_t"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 7,
+            "sem": "ParmDecl",
+            "text": "*"
+        },
+        {
+            "kind": "Identifier",
+            "line": 7,
+            "sem": "ParmDecl",
+            "sym": {
+                "id": "c:malloc.c@270@F@pthread_cond_wait@cond_t",
+                "kind": "ParmDecl",
+                "type": "struct pthread_cond_t *"
+            },
+            "text": "cond_t"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 7,
+            "sem": "FunctionDecl",
+            "text": ","
+        },
+        {
+            "kind": "Keyword",
+            "line": 7,
+            "sem": "ParmDecl",
+            "text": "struct"
+        },
+        {
+            "kind": "Identifier",
+            "line": 7,
+            "sem": "TypeRef",
+            "sym": {
+                "type": "struct pthread_mutex_t"
+            },
+            "text": "pthread_mutex_t"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 7,
+            "sem": "ParmDecl",
+            "text": "*"
+        },
+        {
+            "kind": "Identifier",
+            "line": 7,
+            "sem": "ParmDecl",
+            "sym": {
+                "id": "c:malloc.c@301@F@pthread_cond_wait@mutex_t",
+                "kind": "ParmDecl",
+                "type": "struct pthread_mutex_t *"
+            },
+            "text": "mutex_t"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 7,
+            "sem": "FunctionDecl",
+            "text": ")"
+        },
+        {
+            "kind": "Keyword",
+            "line": 8,
+            "sem": "FunctionDecl",
+            "text": "void"
+        },
+        {
+            "kind": "Identifier",
+            "line": 8,
+            "sem": "FunctionDecl",
+            "sym": {
+                "id": "c:@F@pthread_cond_signal",
+                "kind": "FunctionDecl",
+                "type": "void (struct pthread_cond_t *)"
+            },
+            "text": "pthread_cond_signal"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 8,
+            "sem": "FunctionDecl",
+            "text": "("
+        },
+        {
+            "kind": "Keyword",
+            "line": 8,
+            "sem": "ParmDecl",
+            "text": "struct"
+        },
+        {
+            "kind": "Identifier",
+            "line": 8,
+            "sem": "TypeRef",
+            "sym": {
+                "type": "struct pthread_cond_t"
+            },
+            "text": "pthread_cond_t"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 8,
+            "sem": "ParmDecl",
+            "text": "*"
+        },
+        {
+            "kind": "Identifier",
+            "line": 8,
+            "sem": "ParmDecl",
+            "sym": {
+                "id": "c:malloc.c@360@F@pthread_cond_signal@cond_t",
+                "kind": "ParmDecl",
+                "type": "struct pthread_cond_t *"
+            },
+            "text": "cond_t"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 8,
+            "sem": "FunctionDecl",
+            "text": ")"
+        },
+        {
+            "kind": "Identifier",
+            "line": 9,
+            "sem": "StructDecl",
+            "sym": {
+                "id": "c:@S@aeApiState",
+                "kind": "StructDecl",
+                "type": "struct aeApiState"
+            },
+            "text": "aeApiState"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 9,
+            "sem": "StructDecl",
+            "text": "{"
+        },
+        {
+            "kind": "Keyword",
+            "line": 10,
+            "sem": "FieldDecl",
+            "text": "int"
+        },
+        {
+            "kind": "Identifier",
+            "line": 10,
+            "sem": "FieldDecl",
+            "sym": {
+                "id": "c:@S@aeApiState@FI@epfd",
+                "kind": "FieldDecl",
+                "type": "int"
+            },
+            "text": "epfd"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 10,
+            "sem": "StructDecl",
+            "text": ";"
+        },
+        {
+            "kind": "Keyword",
+            "line": 11,
+            "sem": "FieldDecl",
+            "text": "char"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 11,
+            "sem": "FieldDecl",
+            "text": "*"
+        },
+        {
+            "kind": "Identifier",
+            "line": 11,
+            "sem": "FieldDecl",
+            "sym": {
+                "id": "c:@S@aeApiState@FI@events",
+                "kind": "FieldDecl",
+                "type": "char *"
+            },
+            "text": "events"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 11,
+            "sem": "StructDecl",
+            "text": ";"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 12,
+            "sem": "StructDecl",
+            "text": "}"
+        },
+        {
+            "kind": "Identifier",
+            "line": 12,
+            "sem": "TypedefDecl",
+            "sym": {
+                "id": "c:malloc.c@T@aeApiState",
+                "kind": "TypedefDecl",
+                "type": "aeApiState"
+            },
+            "text": "aeApiState"
+        },
+        {
+            "kind": "Keyword",
+            "line": 13,
+            "sem": "FunctionDecl",
+            "text": "int"
+        },
+        {
+            "kind": "Identifier",
+            "line": 13,
+            "sem": "FunctionDecl",
+            "sym": {
+                "id": "c:@F@aeApiCreate",
+                "kind": "FunctionDecl",
+                "type": "int ()"
+            },
+            "text": "aeApiCreate"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 13,
+            "sem": "FunctionDecl",
+            "text": "("
+        },
+        {
+            "kind": "Punctuation",
+            "line": 13,
+            "sem": "FunctionDecl",
+            "text": ")"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 13,
+            "sem": "CompoundStmt",
+            "text": "{"
+        },
+        {
+            "kind": "Identifier",
+            "line": 14,
+            "sem": "TypeRef",
+            "sym": {
+                "type": "aeApiState"
+            },
+            "text": "aeApiState"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 14,
+            "sem": "VarDecl",
+            "text": "*"
+        },
+        {
+            "kind": "Identifier",
+            "line": 14,
+            "sem": "VarDecl",
+            "sym": {
+                "id": "c:malloc.c@490@F@aeApiCreate@state",
+                "kind": "VarDecl",
+                "type": "aeApiState *"
+            },
+            "text": "state"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 14,
+            "sem": "VarDecl",
+            "text": "="
+        },
+        {
+            "kind": "Identifier",
+            "line": 14,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:@F@malloc",
+                "kind": "FunctionDecl",
+                "ref": {
+                    "file": "/usr/include/stdlib.h",
+                    "linenum": 466
+                },
+                "type": "void *(unsigned long)"
+            },
+            "text": "malloc"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 14,
+            "sem": "CallExpr",
+            "text": "("
+        },
+        {
+            "kind": "Literal",
+            "line": 14,
+            "sem": "IntegerLiteral",
+            "text": "16"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 14,
+            "sem": "CallExpr",
+            "text": ")"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 14,
+            "sem": "DeclStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Keyword",
+            "line": 15,
+            "sem": "IfStmt",
+            "text": "if"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 15,
+            "sem": "IfStmt",
+            "text": "("
+        },
+        {
+            "kind": "Punctuation",
+            "line": 15,
+            "sem": "UnaryOperator",
+            "text": "!"
+        },
+        {
+            "kind": "Identifier",
+            "line": 15,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:malloc.c@490@F@aeApiCreate@state",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/malloc.c",
+                    "linenum": 14
+                },
+                "type": "aeApiState *"
+            },
+            "text": "state"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 15,
+            "sem": "IfStmt",
+            "text": ")"
+        },
+        {
+            "kind": "Keyword",
+            "line": 15,
+            "sem": "ReturnStmt",
+            "text": "return"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 15,
+            "sem": "UnaryOperator",
+            "text": "-"
+        },
+        {
+            "kind": "Literal",
+            "line": 15,
+            "sem": "IntegerLiteral",
+            "text": "1"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 15,
+            "sem": "CompoundStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Identifier",
+            "line": 16,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:malloc.c@490@F@aeApiCreate@state",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/malloc.c",
+                    "linenum": 14
+                },
+                "type": "aeApiState *"
+            },
+            "text": "state"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 16,
+            "sem": "MemberRefExpr",
+            "text": "->"
+        },
+        {
+            "kind": "Identifier",
+            "line": 16,
+            "sem": "MemberRefExpr",
+            "sym": {
+                "id": "c:@S@aeApiState@FI@events",
+                "kind": "FieldDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/malloc.c",
+                    "linenum": 11
+                },
+                "type": "char *"
+            },
+            "text": "events"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 16,
+            "sem": "BinaryOperator",
+            "text": "="
+        },
+        {
+            "kind": "Identifier",
+            "line": 16,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:@F@malloc",
+                "kind": "FunctionDecl",
+                "ref": {
+                    "file": "/usr/include/stdlib.h",
+                    "linenum": 466
+                },
+                "type": "void *(unsigned long)"
+            },
+            "text": "malloc"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 16,
+            "sem": "CallExpr",
+            "text": "("
+        },
+        {
+            "kind": "Literal",
+            "line": 16,
+            "sem": "IntegerLiteral",
+            "text": "8"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 16,
+            "sem": "CallExpr",
+            "text": ")"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 16,
+            "sem": "CompoundStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Keyword",
+            "line": 17,
+            "sem": "IfStmt",
+            "text": "if"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 17,
+            "sem": "IfStmt",
+            "text": "("
+        },
+        {
+            "kind": "Punctuation",
+            "line": 17,
+            "sem": "UnaryOperator",
+            "text": "!"
+        },
+        {
+            "kind": "Identifier",
+            "line": 17,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:malloc.c@490@F@aeApiCreate@state",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/malloc.c",
+                    "linenum": 14
+                },
+                "type": "aeApiState *"
+            },
+            "text": "state"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 17,
+            "sem": "MemberRefExpr",
+            "text": "->"
+        },
+        {
+            "kind": "Identifier",
+            "line": 17,
+            "sem": "MemberRefExpr",
+            "sym": {
+                "id": "c:@S@aeApiState@FI@events",
+                "kind": "FieldDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/malloc.c",
+                    "linenum": 11
+                },
+                "type": "char *"
+            },
+            "text": "events"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 17,
+            "sem": "IfStmt",
+            "text": ")"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 17,
+            "sem": "CompoundStmt",
+            "text": "{"
+        },
+        {
+            "kind": "Identifier",
+            "line": 18,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:@F@free",
+                "kind": "FunctionDecl",
+                "ref": {
+                    "file": "/usr/include/stdlib.h",
+                    "linenum": 483
+                },
+                "type": "void (void *)"
+            },
+            "text": "free"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 18,
+            "sem": "CallExpr",
+            "text": "("
+        },
+        {
+            "kind": "Identifier",
+            "line": 18,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:malloc.c@490@F@aeApiCreate@state",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/malloc.c",
+                    "linenum": 14
+                },
+                "type": "aeApiState *"
+            },
+            "text": "state"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 18,
+            "sem": "CallExpr",
+            "text": ")"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 18,
+            "sem": "CompoundStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Keyword",
+            "line": 19,
+            "sem": "ReturnStmt",
+            "text": "return"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 19,
+            "sem": "UnaryOperator",
+            "text": "-"
+        },
+        {
+            "kind": "Literal",
+            "line": 19,
+            "sem": "IntegerLiteral",
+            "text": "1"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 19,
+            "sem": "CompoundStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 20,
+            "sem": "CompoundStmt",
+            "text": "}"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 21,
+            "sem": "CompoundStmt",
+            "text": "}"
+        }
+    ]
+}

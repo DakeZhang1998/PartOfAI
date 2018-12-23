@@ -1,0 +1,1359 @@
+{
+    "filename": "/sa-bAbI/tokenizer/bin/strcpy.c",
+    "tokens": [
+        {
+            "kind": "Keyword",
+            "line": 3,
+            "sem": "StructDecl",
+            "text": "struct"
+        },
+        {
+            "kind": "Identifier",
+            "line": 3,
+            "sem": "StructDecl",
+            "sym": {
+                "id": "c:@S@pthread_mutex_t",
+                "kind": "StructDecl",
+                "type": "struct pthread_mutex_t"
+            },
+            "text": "pthread_mutex_t"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 3,
+            "sem": "StructDecl",
+            "text": "{"
+        },
+        {
+            "kind": "Keyword",
+            "line": 3,
+            "sem": "FieldDecl",
+            "text": "int"
+        },
+        {
+            "kind": "Identifier",
+            "line": 3,
+            "sem": "FieldDecl",
+            "sym": {
+                "id": "c:@S@pthread_mutex_t@FI@i",
+                "kind": "FieldDecl",
+                "type": "int"
+            },
+            "text": "i"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 3,
+            "sem": "StructDecl",
+            "text": ";"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 3,
+            "sem": "StructDecl",
+            "text": "}"
+        },
+        {
+            "kind": "Keyword",
+            "line": 4,
+            "sem": "StructDecl",
+            "text": "struct"
+        },
+        {
+            "kind": "Identifier",
+            "line": 4,
+            "sem": "StructDecl",
+            "sym": {
+                "id": "c:@S@pthread_cond_t",
+                "kind": "StructDecl",
+                "type": "struct pthread_cond_t"
+            },
+            "text": "pthread_cond_t"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 4,
+            "sem": "StructDecl",
+            "text": "{"
+        },
+        {
+            "kind": "Keyword",
+            "line": 4,
+            "sem": "FieldDecl",
+            "text": "int"
+        },
+        {
+            "kind": "Identifier",
+            "line": 4,
+            "sem": "FieldDecl",
+            "sym": {
+                "id": "c:@S@pthread_cond_t@FI@i",
+                "kind": "FieldDecl",
+                "type": "int"
+            },
+            "text": "i"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 4,
+            "sem": "StructDecl",
+            "text": ";"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 4,
+            "sem": "StructDecl",
+            "text": "}"
+        },
+        {
+            "kind": "Keyword",
+            "line": 5,
+            "sem": "FunctionDecl",
+            "text": "int"
+        },
+        {
+            "kind": "Identifier",
+            "line": 5,
+            "sem": "FunctionDecl",
+            "sym": {
+                "id": "c:@F@pthread_mutex_lock",
+                "kind": "FunctionDecl",
+                "type": "int (struct pthread_mutex_t *)"
+            },
+            "text": "pthread_mutex_lock"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 5,
+            "sem": "FunctionDecl",
+            "text": "("
+        },
+        {
+            "kind": "Keyword",
+            "line": 5,
+            "sem": "ParmDecl",
+            "text": "struct"
+        },
+        {
+            "kind": "Identifier",
+            "line": 5,
+            "sem": "TypeRef",
+            "sym": {
+                "type": "struct pthread_mutex_t"
+            },
+            "text": "pthread_mutex_t"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 5,
+            "sem": "ParmDecl",
+            "text": "*"
+        },
+        {
+            "kind": "Identifier",
+            "line": 5,
+            "sem": "ParmDecl",
+            "sym": {
+                "id": "c:strcpy.c@130@F@pthread_mutex_lock@mutex_t",
+                "kind": "ParmDecl",
+                "type": "struct pthread_mutex_t *"
+            },
+            "text": "mutex_t"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 5,
+            "sem": "FunctionDecl",
+            "text": ")"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 5,
+            "sem": "CompoundStmt",
+            "text": "{"
+        },
+        {
+            "kind": "Keyword",
+            "line": 5,
+            "sem": "ReturnStmt",
+            "text": "return"
+        },
+        {
+            "kind": "Literal",
+            "line": 5,
+            "sem": "IntegerLiteral",
+            "text": "0"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 5,
+            "sem": "CompoundStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 5,
+            "sem": "CompoundStmt",
+            "text": "}"
+        },
+        {
+            "kind": "Keyword",
+            "line": 6,
+            "sem": "FunctionDecl",
+            "text": "int"
+        },
+        {
+            "kind": "Identifier",
+            "line": 6,
+            "sem": "FunctionDecl",
+            "sym": {
+                "id": "c:@F@pthread_mutex_unlock",
+                "kind": "FunctionDecl",
+                "type": "int (struct pthread_mutex_t *)"
+            },
+            "text": "pthread_mutex_unlock"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 6,
+            "sem": "FunctionDecl",
+            "text": "("
+        },
+        {
+            "kind": "Keyword",
+            "line": 6,
+            "sem": "ParmDecl",
+            "text": "struct"
+        },
+        {
+            "kind": "Identifier",
+            "line": 6,
+            "sem": "TypeRef",
+            "sym": {
+                "type": "struct pthread_mutex_t"
+            },
+            "text": "pthread_mutex_t"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 6,
+            "sem": "ParmDecl",
+            "text": "*"
+        },
+        {
+            "kind": "Identifier",
+            "line": 6,
+            "sem": "ParmDecl",
+            "sym": {
+                "id": "c:strcpy.c@201@F@pthread_mutex_unlock@mutex_t",
+                "kind": "ParmDecl",
+                "type": "struct pthread_mutex_t *"
+            },
+            "text": "mutex_t"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 6,
+            "sem": "FunctionDecl",
+            "text": ")"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 6,
+            "sem": "CompoundStmt",
+            "text": "{"
+        },
+        {
+            "kind": "Keyword",
+            "line": 6,
+            "sem": "ReturnStmt",
+            "text": "return"
+        },
+        {
+            "kind": "Literal",
+            "line": 6,
+            "sem": "IntegerLiteral",
+            "text": "0"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 6,
+            "sem": "CompoundStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 6,
+            "sem": "CompoundStmt",
+            "text": "}"
+        },
+        {
+            "kind": "Keyword",
+            "line": 7,
+            "sem": "FunctionDecl",
+            "text": "void"
+        },
+        {
+            "kind": "Identifier",
+            "line": 7,
+            "sem": "FunctionDecl",
+            "sym": {
+                "id": "c:@F@pthread_cond_wait",
+                "kind": "FunctionDecl",
+                "type": "void (struct pthread_cond_t *, struct pthread_mutex_t *)"
+            },
+            "text": "pthread_cond_wait"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 7,
+            "sem": "FunctionDecl",
+            "text": "("
+        },
+        {
+            "kind": "Keyword",
+            "line": 7,
+            "sem": "ParmDecl",
+            "text": "struct"
+        },
+        {
+            "kind": "Identifier",
+            "line": 7,
+            "sem": "TypeRef",
+            "sym": {
+                "type": "struct pthread_cond_t"
+            },
+            "text": "pthread_cond_t"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 7,
+            "sem": "ParmDecl",
+            "text": "*"
+        },
+        {
+            "kind": "Identifier",
+            "line": 7,
+            "sem": "ParmDecl",
+            "sym": {
+                "id": "c:strcpy.c@270@F@pthread_cond_wait@cond_t",
+                "kind": "ParmDecl",
+                "type": "struct pthread_cond_t *"
+            },
+            "text": "cond_t"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 7,
+            "sem": "FunctionDecl",
+            "text": ","
+        },
+        {
+            "kind": "Keyword",
+            "line": 7,
+            "sem": "ParmDecl",
+            "text": "struct"
+        },
+        {
+            "kind": "Identifier",
+            "line": 7,
+            "sem": "TypeRef",
+            "sym": {
+                "type": "struct pthread_mutex_t"
+            },
+            "text": "pthread_mutex_t"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 7,
+            "sem": "ParmDecl",
+            "text": "*"
+        },
+        {
+            "kind": "Identifier",
+            "line": 7,
+            "sem": "ParmDecl",
+            "sym": {
+                "id": "c:strcpy.c@301@F@pthread_cond_wait@mutex_t",
+                "kind": "ParmDecl",
+                "type": "struct pthread_mutex_t *"
+            },
+            "text": "mutex_t"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 7,
+            "sem": "FunctionDecl",
+            "text": ")"
+        },
+        {
+            "kind": "Keyword",
+            "line": 8,
+            "sem": "FunctionDecl",
+            "text": "void"
+        },
+        {
+            "kind": "Identifier",
+            "line": 8,
+            "sem": "FunctionDecl",
+            "sym": {
+                "id": "c:@F@pthread_cond_signal",
+                "kind": "FunctionDecl",
+                "type": "void (struct pthread_cond_t *)"
+            },
+            "text": "pthread_cond_signal"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 8,
+            "sem": "FunctionDecl",
+            "text": "("
+        },
+        {
+            "kind": "Keyword",
+            "line": 8,
+            "sem": "ParmDecl",
+            "text": "struct"
+        },
+        {
+            "kind": "Identifier",
+            "line": 8,
+            "sem": "TypeRef",
+            "sym": {
+                "type": "struct pthread_cond_t"
+            },
+            "text": "pthread_cond_t"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 8,
+            "sem": "ParmDecl",
+            "text": "*"
+        },
+        {
+            "kind": "Identifier",
+            "line": 8,
+            "sem": "ParmDecl",
+            "sym": {
+                "id": "c:strcpy.c@360@F@pthread_cond_signal@cond_t",
+                "kind": "ParmDecl",
+                "type": "struct pthread_cond_t *"
+            },
+            "text": "cond_t"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 8,
+            "sem": "FunctionDecl",
+            "text": ")"
+        },
+        {
+            "kind": "Keyword",
+            "line": 9,
+            "sem": "FunctionDecl",
+            "text": "int"
+        },
+        {
+            "kind": "Identifier",
+            "line": 9,
+            "sem": "FunctionDecl",
+            "sym": {
+                "id": "c:@F@main",
+                "kind": "FunctionDecl",
+                "type": "int (int, char **)"
+            },
+            "text": "main"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 9,
+            "sem": "FunctionDecl",
+            "text": "("
+        },
+        {
+            "kind": "Keyword",
+            "line": 9,
+            "sem": "ParmDecl",
+            "text": "int"
+        },
+        {
+            "kind": "Identifier",
+            "line": 9,
+            "sem": "ParmDecl",
+            "sym": {
+                "id": "c:strcpy.c@401@F@main@argc",
+                "kind": "ParmDecl",
+                "type": "int"
+            },
+            "text": "argc"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 9,
+            "sem": "FunctionDecl",
+            "text": ","
+        },
+        {
+            "kind": "Keyword",
+            "line": 9,
+            "sem": "ParmDecl",
+            "text": "char"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 9,
+            "sem": "ParmDecl",
+            "text": "*"
+        },
+        {
+            "kind": "Identifier",
+            "line": 9,
+            "sem": "ParmDecl",
+            "sym": {
+                "id": "c:strcpy.c@411@F@main@argv",
+                "kind": "ParmDecl",
+                "type": "char *[]"
+            },
+            "text": "argv"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 9,
+            "sem": "ParmDecl",
+            "text": "["
+        },
+        {
+            "kind": "Punctuation",
+            "line": 9,
+            "sem": "ParmDecl",
+            "text": "]"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 9,
+            "sem": "FunctionDecl",
+            "text": ")"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 9,
+            "sem": "CompoundStmt",
+            "text": "{"
+        },
+        {
+            "kind": "Keyword",
+            "line": 10,
+            "sem": "VarDecl",
+            "text": "const"
+        },
+        {
+            "kind": "Keyword",
+            "line": 10,
+            "sem": "VarDecl",
+            "text": "int"
+        },
+        {
+            "kind": "Identifier",
+            "line": 10,
+            "sem": "VarDecl",
+            "sym": {
+                "id": "c:strcpy.c@435@F@main@MAX_LINE",
+                "kind": "VarDecl",
+                "type": "const int"
+            },
+            "text": "MAX_LINE"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 10,
+            "sem": "VarDecl",
+            "text": "="
+        },
+        {
+            "kind": "Literal",
+            "line": 10,
+            "sem": "IntegerLiteral",
+            "text": "128"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 10,
+            "sem": "DeclStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Keyword",
+            "line": 11,
+            "sem": "VarDecl",
+            "text": "char"
+        },
+        {
+            "kind": "Identifier",
+            "line": 11,
+            "sem": "VarDecl",
+            "sym": {
+                "id": "c:strcpy.c@463@F@main@file_name",
+                "kind": "VarDecl",
+                "type": "char [25]"
+            },
+            "text": "file_name"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 11,
+            "sem": "VarDecl",
+            "text": "["
+        },
+        {
+            "kind": "Literal",
+            "line": 11,
+            "sem": "IntegerLiteral",
+            "text": "25"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 11,
+            "sem": "VarDecl",
+            "text": "]"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 11,
+            "sem": "DeclStmt",
+            "text": ","
+        },
+        {
+            "kind": "Identifier",
+            "line": 11,
+            "sem": "VarDecl",
+            "sym": {
+                "id": "c:strcpy.c@463@F@main@output_file",
+                "kind": "VarDecl",
+                "type": "char [11]"
+            },
+            "text": "output_file"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 11,
+            "sem": "VarDecl",
+            "text": "["
+        },
+        {
+            "kind": "Punctuation",
+            "line": 11,
+            "sem": "VarDecl",
+            "text": "]"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 11,
+            "sem": "VarDecl",
+            "text": "="
+        },
+        {
+            "kind": "Literal",
+            "line": 11,
+            "sem": "StringLiteral",
+            "text": "\"result.txt\""
+        },
+        {
+            "kind": "Punctuation",
+            "line": 11,
+            "sem": "DeclStmt",
+            "text": ","
+        },
+        {
+            "kind": "Identifier",
+            "line": 11,
+            "sem": "VarDecl",
+            "sym": {
+                "id": "c:strcpy.c@463@F@main@line",
+                "kind": "VarDecl",
+                "type": "char [128]"
+            },
+            "text": "line"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 11,
+            "sem": "VarDecl",
+            "text": "["
+        },
+        {
+            "kind": "Identifier",
+            "line": 11,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:strcpy.c@435@F@main@MAX_LINE",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/strcpy.c",
+                    "linenum": 10
+                },
+                "type": "const int"
+            },
+            "text": "MAX_LINE"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 11,
+            "sem": "VarDecl",
+            "text": "]"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 11,
+            "sem": "DeclStmt",
+            "text": ","
+        },
+        {
+            "kind": "Punctuation",
+            "line": 11,
+            "sem": "DeclStmt",
+            "text": "*"
+        },
+        {
+            "kind": "Identifier",
+            "line": 11,
+            "sem": "VarDecl",
+            "sym": {
+                "id": "c:strcpy.c@463@F@main@token",
+                "kind": "VarDecl",
+                "type": "char *"
+            },
+            "text": "token"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 11,
+            "sem": "DeclStmt",
+            "text": ","
+        },
+        {
+            "kind": "Identifier",
+            "line": 12,
+            "sem": "VarDecl",
+            "sym": {
+                "id": "c:strcpy.c@463@F@main@result",
+                "kind": "VarDecl",
+                "type": "char [100][40]"
+            },
+            "text": "result"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 12,
+            "sem": "VarDecl",
+            "text": "["
+        },
+        {
+            "kind": "Literal",
+            "line": 12,
+            "sem": "IntegerLiteral",
+            "text": "100"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 12,
+            "sem": "VarDecl",
+            "text": "]"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 12,
+            "sem": "VarDecl",
+            "text": "["
+        },
+        {
+            "kind": "Literal",
+            "line": 12,
+            "sem": "IntegerLiteral",
+            "text": "40"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 12,
+            "sem": "VarDecl",
+            "text": "]"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 12,
+            "sem": "VarDecl",
+            "text": "="
+        },
+        {
+            "kind": "Punctuation",
+            "line": 12,
+            "sem": "InitListExpr",
+            "text": "{"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 12,
+            "sem": "InitListExpr",
+            "text": "{"
+        },
+        {
+            "kind": "Literal",
+            "line": 12,
+            "sem": "CharacterLiteral",
+            "text": "'0'"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 12,
+            "sem": "InitListExpr",
+            "text": "}"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 12,
+            "sem": "InitListExpr",
+            "text": "}"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 12,
+            "sem": "DeclStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Keyword",
+            "line": 13,
+            "sem": "VarDecl",
+            "text": "const"
+        },
+        {
+            "kind": "Keyword",
+            "line": 13,
+            "sem": "VarDecl",
+            "text": "char"
+        },
+        {
+            "kind": "Identifier",
+            "line": 13,
+            "sem": "VarDecl",
+            "sym": {
+                "id": "c:strcpy.c@569@F@main@delim",
+                "kind": "VarDecl",
+                "type": "const char [10]"
+            },
+            "text": "delim"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 13,
+            "sem": "VarDecl",
+            "text": "["
+        },
+        {
+            "kind": "Punctuation",
+            "line": 13,
+            "sem": "VarDecl",
+            "text": "]"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 13,
+            "sem": "VarDecl",
+            "text": "="
+        },
+        {
+            "kind": "Literal",
+            "line": 13,
+            "sem": "StringLiteral",
+            "text": "\" .,;:!-\\n\\t\""
+        },
+        {
+            "kind": "Punctuation",
+            "line": 13,
+            "sem": "DeclStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Keyword",
+            "line": 14,
+            "sem": "VarDecl",
+            "text": "int"
+        },
+        {
+            "kind": "Identifier",
+            "line": 14,
+            "sem": "VarDecl",
+            "sym": {
+                "id": "c:strcpy.c@606@F@main@freq",
+                "kind": "VarDecl",
+                "type": "int [100]"
+            },
+            "text": "freq"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 14,
+            "sem": "VarDecl",
+            "text": "["
+        },
+        {
+            "kind": "Literal",
+            "line": 14,
+            "sem": "IntegerLiteral",
+            "text": "100"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 14,
+            "sem": "VarDecl",
+            "text": "]"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 14,
+            "sem": "VarDecl",
+            "text": "="
+        },
+        {
+            "kind": "Punctuation",
+            "line": 14,
+            "sem": "InitListExpr",
+            "text": "{"
+        },
+        {
+            "kind": "Literal",
+            "line": 14,
+            "sem": "IntegerLiteral",
+            "text": "0"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 14,
+            "sem": "InitListExpr",
+            "text": "}"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 14,
+            "sem": "DeclStmt",
+            "text": ","
+        },
+        {
+            "kind": "Identifier",
+            "line": 14,
+            "sem": "VarDecl",
+            "sym": {
+                "id": "c:strcpy.c@606@F@main@i",
+                "kind": "VarDecl",
+                "type": "int"
+            },
+            "text": "i"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 14,
+            "sem": "DeclStmt",
+            "text": ","
+        },
+        {
+            "kind": "Identifier",
+            "line": 14,
+            "sem": "VarDecl",
+            "sym": {
+                "id": "c:strcpy.c@606@F@main@n",
+                "kind": "VarDecl",
+                "type": "int"
+            },
+            "text": "n"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 14,
+            "sem": "VarDecl",
+            "text": "="
+        },
+        {
+            "kind": "Literal",
+            "line": 14,
+            "sem": "IntegerLiteral",
+            "text": "0"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 14,
+            "sem": "DeclStmt",
+            "text": ","
+        },
+        {
+            "kind": "Identifier",
+            "line": 14,
+            "sem": "VarDecl",
+            "sym": {
+                "id": "c:strcpy.c@606@F@main@count",
+                "kind": "VarDecl",
+                "type": "int"
+            },
+            "text": "count"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 14,
+            "sem": "VarDecl",
+            "text": "="
+        },
+        {
+            "kind": "Literal",
+            "line": 14,
+            "sem": "IntegerLiteral",
+            "text": "0"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 14,
+            "sem": "DeclStmt",
+            "text": ","
+        },
+        {
+            "kind": "Identifier",
+            "line": 14,
+            "sem": "VarDecl",
+            "sym": {
+                "id": "c:strcpy.c@606@F@main@num_lines",
+                "kind": "VarDecl",
+                "type": "int"
+            },
+            "text": "num_lines"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 14,
+            "sem": "VarDecl",
+            "text": "="
+        },
+        {
+            "kind": "Literal",
+            "line": 14,
+            "sem": "IntegerLiteral",
+            "text": "0"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 14,
+            "sem": "DeclStmt",
+            "text": ","
+        },
+        {
+            "kind": "Identifier",
+            "line": 14,
+            "sem": "VarDecl",
+            "sym": {
+                "id": "c:strcpy.c@606@F@main@tot_words",
+                "kind": "VarDecl",
+                "type": "int"
+            },
+            "text": "tot_words"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 14,
+            "sem": "VarDecl",
+            "text": "="
+        },
+        {
+            "kind": "Literal",
+            "line": 14,
+            "sem": "IntegerLiteral",
+            "text": "0"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 14,
+            "sem": "DeclStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Keyword",
+            "line": 15,
+            "sem": "IfStmt",
+            "text": "if"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 15,
+            "sem": "IfStmt",
+            "text": "("
+        },
+        {
+            "kind": "Identifier",
+            "line": 15,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:strcpy.c@401@F@main@argc",
+                "kind": "ParmDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/strcpy.c",
+                    "linenum": 9
+                },
+                "type": "int"
+            },
+            "text": "argc"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 15,
+            "sem": "BinaryOperator",
+            "text": ">"
+        },
+        {
+            "kind": "Literal",
+            "line": 15,
+            "sem": "IntegerLiteral",
+            "text": "1"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 15,
+            "sem": "IfStmt",
+            "text": ")"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 15,
+            "sem": "CompoundStmt",
+            "text": "{"
+        },
+        {
+            "kind": "Identifier",
+            "line": 16,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:@F@strcpy",
+                "kind": "FunctionDecl",
+                "ref": {
+                    "file": "/usr/include/string.h",
+                    "linenum": 125
+                },
+                "type": "char *(char *, const char *)"
+            },
+            "text": "strcpy"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 16,
+            "sem": "CallExpr",
+            "text": "("
+        },
+        {
+            "kind": "Identifier",
+            "line": 16,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:strcpy.c@463@F@main@file_name",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/strcpy.c",
+                    "linenum": 11
+                },
+                "type": "char [25]"
+            },
+            "text": "file_name"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 16,
+            "sem": "CallExpr",
+            "text": ","
+        },
+        {
+            "kind": "Identifier",
+            "line": 16,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:strcpy.c@411@F@main@argv",
+                "kind": "ParmDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/strcpy.c",
+                    "linenum": 9
+                },
+                "type": "char *[]"
+            },
+            "text": "argv"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 16,
+            "sem": "ArraySubscriptExpr",
+            "text": "["
+        },
+        {
+            "kind": "Literal",
+            "line": 16,
+            "sem": "IntegerLiteral",
+            "text": "1"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 16,
+            "sem": "ArraySubscriptExpr",
+            "text": "]"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 16,
+            "sem": "CallExpr",
+            "text": ")"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 16,
+            "sem": "CompoundStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 17,
+            "sem": "CompoundStmt",
+            "text": "}"
+        },
+        {
+            "kind": "Keyword",
+            "line": 17,
+            "sem": "IfStmt",
+            "text": "else"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 17,
+            "sem": "CompoundStmt",
+            "text": "{"
+        },
+        {
+            "kind": "Identifier",
+            "line": 18,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:@F@printf",
+                "kind": "FunctionDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/strcpy.c",
+                    "linenum": 18
+                },
+                "type": "int (const char *, ...)"
+            },
+            "text": "printf"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 18,
+            "sem": "CallExpr",
+            "text": "("
+        },
+        {
+            "kind": "Literal",
+            "line": 18,
+            "sem": "StringLiteral",
+            "text": "\"What is the name of the file you are trying to access?\\n\""
+        },
+        {
+            "kind": "Punctuation",
+            "line": 18,
+            "sem": "CallExpr",
+            "text": ")"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 18,
+            "sem": "CompoundStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Identifier",
+            "line": 19,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:@F@scanf",
+                "kind": "FunctionDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/strcpy.c",
+                    "linenum": 19
+                },
+                "type": "int (const char *restrict, ...)"
+            },
+            "text": "scanf"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 19,
+            "sem": "CallExpr",
+            "text": "("
+        },
+        {
+            "kind": "Literal",
+            "line": 19,
+            "sem": "StringLiteral",
+            "text": "\"%s\""
+        },
+        {
+            "kind": "Punctuation",
+            "line": 19,
+            "sem": "CallExpr",
+            "text": ","
+        },
+        {
+            "kind": "Identifier",
+            "line": 19,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:strcpy.c@463@F@main@file_name",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/strcpy.c",
+                    "linenum": 11
+                },
+                "type": "char [25]"
+            },
+            "text": "file_name"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 19,
+            "sem": "CallExpr",
+            "text": ")"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 19,
+            "sem": "CompoundStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 20,
+            "sem": "CompoundStmt",
+            "text": "}"
+        },
+        {
+            "kind": "Keyword",
+            "line": 21,
+            "sem": "ReturnStmt",
+            "text": "return"
+        },
+        {
+            "kind": "Literal",
+            "line": 21,
+            "sem": "IntegerLiteral",
+            "text": "0"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 21,
+            "sem": "CompoundStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 22,
+            "sem": "CompoundStmt",
+            "text": "}"
+        }
+    ]
+}
